@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <a href="https://github.com/karthikmudunuri/eldoraui">
 
-## Getting Started
+ <img src="https://github.com/user-attachments/assets/54c559b8-0dd1-4ef8-a3d0-06f5086224b0" alt="Logo" width="60" height="60">
+  </a>
+  <h1 align="center">Eldora UI</h1>
+  <p align="center">
+   open-source animated components built with React, Typescript, Tailwind CSS, and Framer Motion.
+100% open-source, and customizable.
+  </p>
+  <p>
+    
+   <a href="https://www.eldoraui.site/">Visit site</a>
+    ·
+    <a href="https://github.com/karthikmudunuri/eldoraui/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/karthikmudunuri/eldoraui/issues">Request Feature</a>
+  </p>
+</div>
 
-First, run the development server:
+<!-- ABOUT THE TEMPLATE -->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<div align="center mt-5">
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ <img width="1420" alt="saas-landing" src="https://github.com/user-attachments/assets/fcaf6b8d-004b-41d5-a1f8-8b609d626950">
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+ 
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Saas Landing Page
 
-## Learn More
+Template for saas landing page with dark theme using Next.js 14, React, TailwindCSS, Framer motion
 
-To learn more about Next.js, take a look at the following resources:
+# Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Eldora UI
+- Responsive for different devices
+- Optimized for Next.js and Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Getting Started Locally
 
-## Deploy on Vercel
+1. Clone this repository to your local machine:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   git clone https://github.com/karthikmudunuri/portfolio-template
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Move to the cloned directory
+
+   ```bash
+   cd portfolio-template
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the local Server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the [Components](https://github.com/karthikmudunuri/saas-landing-page-template/tree/main/src/components) folder and make changes
+
+# License
+
+Licensed under the [MIT license](https://github.com/karthikmudunuri/saas-landing-page-template/blob/main/LICENSE.md).
