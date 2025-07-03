@@ -1,9 +1,24 @@
 import Bentodemo from './bentogrid';
+import { Workflow } from './Workflow';
 
 export const Features = () => {
   return (
 
     <div className="bg-black text-white py-[72px] sm:py-24 ">
+
+      <div className="container">
+        <h2 className="text-center font-bold text-5xl sm:text-6xl tracking-tighter">Our Process</h2>
+        <div className='max-w-xl mx-auto'>
+        <p className="text-center mt-5 text-xl text-white/70">
+          We follow a proven methodology to ensure your project is delivered on time, within budget, and exceeds expectations.
+        </p>
+        </div>
+        <div className="flex flex-col items-center justify-center sm:flex-row gap-4 my-32">          
+          <Workflow/>
+        </div>
+
+      </div>
+
 
       <div className="container">
         <h2 className="text-center font-bold text-5xl sm:text-6xl tracking-tighter">Everything you need </h2>

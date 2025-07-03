@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const logos = [
   "https://res.cloudinary.com/dl2adjye7/image/upload/v1716817722/Amazon_icon.svg_a4qmtg.png",
@@ -112,64 +113,53 @@ const CardWithEffect = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-const AWSIcon = () => {
-  
+const TechIcon = () => {
+  // Array of objects containing name, image, and color
+  const awsServices = [
+    { name: 'React.js', image: '/assets/icons/reactjs.svg', color: '#ff9900' },
+    { name: 'Node.js', image: '/assets/icons/nodejs.svg', color: '#ff9900' },
+    { name: 'Laravel', image: '/assets/icons/laravel.svg', color: '#1c88c7' },
+    { name: 'TypeScript', image: '/assets/icons/typescript.svg', color: '#1c88c7' },
+    { name: 'GraphQL', image: '/assets/icons/graphql.svg', color: '#1c88c7' },
+    { name: 'Angular', image: '/assets/icons/angular.svg', color: '#1c88c7' },
+    { name: 'Android', image: '/assets/icons/android.svg', color: '#ffffff' },
+    { name: 'Flutter', image: '/assets/icons/flutter.svg', color: '#ffffff' },
+    { name: 'Figma', image: '/assets/icons/figma.svg', color: '#ffffff' },
+    { name: 'Illustrator', image: '/assets/icons/ai.svg', color: '#ffffff' },
+  ];
 
   return (
     <div className="flex flex-col justify-center h-full items-center relative">
-         <div className="flex flex-row gap-8 justify-center h-full items-center relative">
-         <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
-          <img src={logos[0]} alt="Logo 2" className="filter invert brightness-0" />
-          <motion.div
-            className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
-            initial={{ x: '-100%' }}
-            animate={{ x: '100%' }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              repeat: Infinity,
-              repeatType: 'loop',
-            }}
-            style={{ willChange: 'transform' }}
-          />
-        </div>
-        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
-          <img src={logos[1]} alt="Logo 2" className="filter invert brightness-0" />
-          <motion.div
-            className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
-            initial={{ x: '-100%' }}
-            animate={{ x: '100%' }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              repeat: Infinity,
-              repeatType: 'loop',
-            }}
-            style={{ willChange: 'transform' }}
-          />
-        </div>
-        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
-          <img src={logos[2]} alt="Logo 2" className="filter invert brightness-0" />
-          <motion.div
-            className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
-            initial={{ x: '-100%' }}
-            animate={{ x: '100%' }}
-            transition={{
-              duration: 2,
-              ease: 'linear',
-              repeat: Infinity,
-              repeatType: 'loop',
-            }}
-            style={{ willChange: 'transform' }}
-          />
-        </div>
-        </div>
-
-      
-      <div className="text-left p-6 mt-4">
-        <h1 className="text-white text-2xl font-bold mb-2">AWS Integration</h1>
-        <p className="text-gray-400 text-lg">integrate AWS and use seamlessly with us.</p>
+      <div className="grid grid-cols-4 gap-8 justify-center h-full items-center relative">
+  {awsServices.map((service, index) => (
+    <div key={index} className="flex flex-col items-center">
+      <div
+        className={`relative bg-black border-2 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_${service.color}]`}
+      >
+        <Image
+          src={service.image}
+          alt={service.name}
+          width={100}
+          height={100}
+        />
+        <motion.div
+          className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
+          initial={{ x: '-100%' }}
+          animate={{ x: '100%' }}
+          transition={{
+            duration: 2,
+            ease: 'linear',
+            repeat: Infinity,
+            repeatType: 'loop',
+          }}
+          style={{ willChange: 'transform' }}
+        />
       </div>
+      {/* Logo name below the card */}
+      <p className="text-white text-sm mt-2 text-center">{service.name}</p>
+    </div>
+  ))}
+</div>
     </div>
   );
 };
@@ -282,7 +272,7 @@ const BentoBox1 = () => {
             </div>
           </CardWithEffect>
           <CardWithEffect>
-            <AWSIcon />
+            <TechIcon />
           </CardWithEffect>
         </div>
       </div>

@@ -1,8 +1,4 @@
-
-import InstaIcon from '../assets/icons/insta.svg'
-import XIcon from '../assets/icons/x-social.svg'
-import LinkedInIcon from '../assets/icons/linkedin.svg'
-import YoutubeIcon from '../assets/icons/youtube.svg'
+import Image from 'next/image';
 
 export const Footer = () => {
   return(
@@ -11,10 +7,10 @@ export const Footer = () => {
       <div className='flex flex-col gap-5 sm:flex-row sm:justify-between'>
         <div className="text-center"> 2024 Eldora UI All rights are reserved</div>
         <ul className='flex justify-center gap-2.5'>
-          <li><XIcon/></li>
-          <li><LinkedInIcon/></li>
-          <li><InstaIcon/></li>
-          <li><YoutubeIcon/></li>
+          <li><Image src={'/assets/icons/x-social.svg'} width={100} height={100} alt='x-icon'/></li>
+          <li><Image src={'/assets/icons/linkedin.svg'} width={100} height={100} alt='linkedin-icon'/></li>
+          <li><Image src={'/assets/icons/youtube.svg'} width={100} height={100} alt='youtube-icon'/></li>
+          <li><Image src={'/assets/icons/insta.svg'} width={100} height={100} alt='instagram-icon'/></li>
         </ul>
       </div>
 

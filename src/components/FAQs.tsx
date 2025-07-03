@@ -1,9 +1,9 @@
 "use client"
 import { useState } from "react";
-import PlusIcon from "../assets/icons/plus.svg";
-import MinusIcon from "../assets/icons/minus.svg";
 import clsx from "clsx";
 import {motion , AnimatePresence} from 'framer-motion';
+import Image from "next/image";
+import { Minus, Plus } from "lucide-react";
 const items = [
   {
     question: "What payment methods do you accept?",
@@ -34,7 +34,7 @@ const AccordinationItem = ({question, answer}:{question:string, answer: string})
     <div className=" py-7 border-b border-white/30" onClick={() => setIsOpen(!isOpen)}>
     <div className="flex items-center ">
       <span className="flex-1 text-lg font-bold">{question}</span>
-      {isOpen ? <MinusIcon /> :<PlusIcon />}
+      {isOpen ? <Minus/> : <Plus/>}
       
       </div>
       <AnimatePresence>

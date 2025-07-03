@@ -1,6 +1,5 @@
 "use client"
-import HelixImage from '../assets/images/helix2.png'
-import EmojiImage from '../assets/images/emojistar.png'
+
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { use, useRef } from 'react';
@@ -20,11 +19,11 @@ export const CallToAction = () => {
       
       <div className="container max-w-xl relative">
       <motion.div style={{translateY}}>
-      <Image src={HelixImage} alt="helix" className="absolute top-6 left-[calc(100%+36px)]" />
+      <Image src={'/assets/images/helix2.png'} alt="helix" className="absolute top-6 left-[calc(100%+36px)]" width={100} height={100}/>
       </motion.div>
       <motion.div style={{translateY}}>
        
-      <Image src={EmojiImage} alt="emoji" className="absolute -top-[120px] right-[calc(100%+30px)]" />
+      <Image src={'/assets/images/emojistar.png'} alt="emoji" className="absolute -top-[120px] right-[calc(100%+30px)]" width={100} height={100}/>
       </motion.div>
        
 

@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import LogoImage from '../assets/icons/logo.webp';
-import MenuIcon from '../assets/icons/menu.svg';
+import { Menu } from 'lucide-react';
 
 export const Navbar = () => {
   return (
@@ -10,14 +9,15 @@ export const Navbar = () => {
           <div className="py-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <Image 
-                src={LogoImage} 
-                className="h-12 w-12 relative mt-1 rounded-full" 
+                src={'/assets/icons/logo.png'} 
+                className="relative mt-1 w-full h-full" 
                 alt="Logo Not Found"
+                width={100}
+                height={100}
               />
-              <h1 className="text-white font-bold">InfiniMorph Consulting</h1>
             </div>
             <div className="border border-white border-opacity-30 h-10 w-10 inline-flex justify-center items-center rounded-lg sm:hidden">
-              <MenuIcon className="text-white" />
+              <Menu/>
             </div>
             <nav className="text-white gap-6 items-center hidden sm:flex">
               <a href="#" className="text-opacity-60 text-white hover:text-opacity-100 transition">About</a>
