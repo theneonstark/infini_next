@@ -16,7 +16,6 @@ export default function Home() {
   return (
     <>
     <div className="overflow-x-hidden bg-black">
-      <Navbar />
       <Hero />
       <LogoTicker />
       <Weare/>
@@ -28,7 +27,6 @@ export default function Home() {
       <FAQs />
       <CallToAction />
       </div>
-      <Footer />
     </>
   );
 }

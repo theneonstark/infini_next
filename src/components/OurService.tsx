@@ -1,96 +1,153 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
+"use client"
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export default function OurService() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
-    <div style={{ backgroundColor: '#1a1a1a', minHeight: '100vh', padding: '40px', position: 'relative' }}>
-      <div style={{ position: 'absolute', top: '20%', left: '5%', width: '90%', height: '60%', background: 'linear-gradient(90deg, rgba(0,255,0,0.1) 0%, rgba(0,255,0,0) 100%)', borderRadius: '50%', filter: 'blur(50px)' }}></div>
-      <div style={{ position: 'relative', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', maxWidth: '1200px', margin: '0 auto' }}>
-        <Card className="bg-[#2a2a2a] text-white text-center p-5 border border-gray-800 hover:border-green-500">
-          <CardHeader>
-            <img src="https://img.icons8.com/ios-filled/50/00ff00/globe.png" alt="Web Design" className="mx-auto" />
-            <CardTitle className="text-green-500 mt-2">Web Design</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className="text-white">
-              Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia. Torquent fringilla facilisi placerat magna pellentesque facilis nisi faucibus.
-            </CardDescription>
-          </CardContent>
-          <CardFooter className="justify-center">
-            <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white">Get Started</Button>
-          </CardFooter>
-        </Card>
-        <Card className="bg-[#2a2a2a] text-white text-center p-5 border border-gray-800 hover:border-green-500">
-          <CardHeader>
-            <img src="https://img.icons8.com/ios-filled/50/00ff00/code.png" alt="Web Development" className="mx-auto" />
-            <CardTitle className="text-green-500 mt-2">Web Development</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className="text-white">
-              Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia. Torquent fringilla facilisi placerat magna pellentesque facilis nisi faucibus.
-            </CardDescription>
-          </CardContent>
-          <CardFooter className="justify-center">
-            <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white">Get Started</Button>
-          </CardFooter>
-        </Card>
-        <Card className="bg-[#2a2a2a] text-white text-center p-5 border border-gray-800 hover:border-green-500">
-          <CardHeader>
-            <img src="https://img.icons8.com/ios-filled/50/00ff00/marketing.png" alt="Digital Marketing" className="mx-auto" />
-            <CardTitle className="text-green-500 mt-2">Digital Marketing</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className="text-white">
-              Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia. Torquent fringilla facilisi placerat magna pellentesque facilis nisi faucibus.
-            </CardDescription>
-          </CardContent>
-          <CardFooter className="justify-center">
-            <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white">Get Started</Button>
-          </CardFooter>
-        </Card>
-        <Card className="bg-[#2a2a2a] text-white text-center p-5 border border-gray-800 hover:border-green-500">
-          <CardHeader>
-            <img src="https://img.icons8.com/ios-filled/50/00ff00/identity.png" alt="Visual Identity" className="mx-auto" />
-            <CardTitle className="text-green-500 mt-2">Visual Identity</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className="text-white">
-              Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia. Torquent fringilla facilisi placerat magna pellentesque facilis nisi faucibus.
-            </CardDescription>
-          </CardContent>
-          <CardFooter className="justify-center">
-            <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white">Get Started</Button>
-          </CardFooter>
-        </Card>
-        <Card className="bg-[#2a2a2a] text-white text-center p-5 border border-gray-800 hover:border-green-500">
-          <CardHeader>
-            <img src="https://img.icons8.com/ios-filled/50/00ff00/consultation.png" alt="Consultation" className="mx-auto" />
-            <CardTitle className="text-green-500 mt-2">Consultation</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className="text-white">
-              Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia. Torquent fringilla facilisi placerat magna pellentesque facilis nisi faucibus.
-            </CardDescription>
-          </CardContent>
-          <CardFooter className="justify-center">
-            <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white">Get Started</Button>
-          </CardFooter>
-        </Card>
-        <Card className="bg-[#2a2a2a] text-white text-center p-5 border border-gray-800 hover:border-green-500">
-          <CardHeader>
-            <img src="https://img.icons8.com/ios-filled/50/00ff00/maintenance.png" alt="Web Maintenance" className="mx-auto" />
-            <CardTitle className="text-green-500 mt-2">Web Maintenance</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className="text-white">
-              Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia. Torquent fringilla facilisi placerat magna pellentesque facilis nisi faucibus.
-            </CardDescription>
-          </CardContent>
-          <CardFooter className="justify-center">
-            <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white">Get Started</Button>
-          </CardFooter>
-        </Card>
-      </div>
+    <div className="bg-black min-h-screen py-10 relative overflow-hidden">
+      <motion.h1
+        className="text-center text-white font-bold text-5xl sm:text-6xl tracking-tighter my-32"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        Our Services
+      </motion.h1>
+      
+      {/* Animated Background Glow */}
+      <motion.div
+        className="absolute top-[20%] left-[5%] w-[90%] h-[60%] rounded-full bg-gradient-to-r from-green-400/10 to-green-400/0 blur-[50px] pointer-events-none"
+        animate={{
+          scale: [1, 1.1, 1],
+          opacity: [0.3, 0.5, 0.3],
+        }}
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          repeatType: "reverse"
+        }}
+      />
+
+      <motion.div
+        className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto px-4"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {services.map((service, idx) => (
+          <motion.div
+            key={idx}
+            variants={cardVariants}
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.3 }
+            }}
+          >
+            <Card
+              className="bg-black text-white text-center p-5 border border-t border-white/70 hover:border-green-400 transition-colors"
+            >
+              <CardHeader>
+                <motion.img
+                  src={service.icon}
+                  alt={service.title}
+                  className="mx-auto"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ duration: 0.5, delay: idx * 0.2 }}
+                />
+                <CardTitle className="text-green-400 mt-2">{service.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-white">
+                  {service.description}
+                </CardDescription>
+              </CardContent>
+              <CardFooter className="justify-center">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Button
+                    variant="outline"
+                    className="border-green-400 text-green-400 hover:bg-green-400 hover:text-white"
+                  >
+                    Get Started
+                  </Button>
+                </motion.div>
+              </CardFooter>
+            </Card>
+          </motion.div>
+        ))}
+      </motion.div>
     </div>
   );
 }
+
+const services = [
+  {
+    title: "Web Design",
+    icon: "https://img.icons8.com/ios-filled/50/30D4A5/globe.png",
+    description:
+      "Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia.",
+  },
+  {
+    title: "Web Development",
+    icon: "https://img.icons8.com/ios-filled/50/30D4A5/code.png",
+    description:
+      "Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia.",
+  },
+  {
+    title: "Digital Marketing",
+    icon: "https://img.icons8.com/ios-filled/50/30D4A5/marketing.png",
+    description:
+      "Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia.",
+  },
+  {
+    title: "Visual Identity",
+    icon: "https://img.icons8.com/ios-filled/50/30D4A5/identity.png",
+    description:
+      "Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia.",
+  },
+  {
+    title: "Consultation",
+    icon: "https://img.icons8.com/ios-filled/50/30D4A5/consultation.png",
+    description:
+      "Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia.",
+  },
+  {
+    title: "Web Maintenance",
+    icon: "https://img.icons8.com/ios-filled/50/30D4A5/maintenance.png",
+    description:
+      "Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia.",
+  },
+];
