@@ -156,7 +156,7 @@ export const Hero = () => {
             ref={descriptionRef}
             className='text-xl text-center mt-8 max-w-md'
           >
-            Whether you're a startup or scaling enterprise, we help you build, launch, and grow—faster and smarter.
+            Whether you&#39;re a startup or scaling enterprise, we help you build, launch, and grow—faster and smarter.
           </p>
         </div>
         <div className="flex justify-center mt-8">
