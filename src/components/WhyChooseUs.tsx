@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function WhyChooseUs() {
   return (
-    <section className="w-full bg-[#111] text-white py-12 px-4 sm:px-6 md:px-12 lg:px-20 flex justify-center">
+    <section className="w-full bg-[#00000] text-white py-12 px-4 sm:px-6 md:px-12 lg:px-20 flex justify-center">
       <div className="w-full max-w-7xl flex flex-col lg:flex-row gap-8 lg:gap-12 items-center justify-between">
         {/* Left Section */}
         <div className="w-full lg:w-1/2 max-w-xl">

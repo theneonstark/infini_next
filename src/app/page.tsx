@@ -23,7 +23,7 @@ export default function Home() {
       <Features /> 
       <WhyChooseUs/>
       <Testimonials/>
-      <Pricing/>     
+      {/* <Pricing/>      */}
       <FAQs />
       <CallToAction />
       </div>
