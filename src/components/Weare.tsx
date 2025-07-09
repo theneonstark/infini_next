@@ -142,7 +142,7 @@ export const Weare = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={controls}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="bg-black text-white py-8 sm:py-12 lg:py-16 px-4 sm:px-6 md:px-10 lg:px-20"
+      className="text-white py-8 sm:py-12 lg:py-16 px-4 sm:px-6 md:px-10 lg:px-20"
     >
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
         {/* Left Side: Image + Overlay Box */}
@@ -182,8 +182,7 @@ export const Weare = () => {
               </span>
             </h1>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-xl">
-              Sem iaculis facilisis convallis ex aliquam massa a venenatis blandit pede rhoncus.
-              Euismod consectetur nostra etiam lectus potenti accumsan pellentesque venenatis.
+              Transform your digital presence with our cutting-edge tools and strategies. Our tailored solutions empower businesses to thrive, delivering measurable results through seamless integration and expert support.
             </p>
 
             {/* Stats */}
@@ -205,16 +204,9 @@ export const Weare = () => {
                 <p className="text-xs sm:text-sm text-gray-400">Client Reviews</p>
               </div>
             </div>
-
-            <motion.div
-              variants={buttonVariants}
-              initial="rest"
-              whileHover="hover"
-            >
-              <Button className="mt-4 sm:mt-6 bg-[#9c40ff] text-black hover:bg-green-300 w-fit rounded-full text-xs sm:text-sm px-4 sm:px-6">
+              <Button className="mt-4 sm:mt-6 bg-[#9c40ff] text-white hover:bg-[#6e00ff] w-fit rounded-full text-xs sm:text-sm px-4 sm:px-6">
                 Discover more
               </Button>
-            </motion.div>
           </div>
 
           {/* Second Text Container */}
@@ -224,18 +216,11 @@ export const Weare = () => {
               Empowering Your <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Digital Future</span>
             </h2>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque eros id magna
-              dictum, ac posuere nunc ultricies. Vestibulum ante ipsum primis in faucibus orci.
+              We are dedicated to transforming your vision into reality through innovative digital solutions. By leveraging cutting-edge technology and strategic expertise, we enable businesses to thrive in an ever-evolving online landscape.
             </p>
-            <motion.div
-              variants={buttonVariants}
-              initial="rest"
-              whileHover="hover"
-            >
-              <Button className="mt-4 sm:mt-6 bg-[#9c40ff] text-black hover:bg-green-300 w-fit rounded-full text-xs sm:text-sm px-4 sm:px-6">
+              <Button className="mt-4 sm:mt-6 bg-[#9c40ff] text-white hover:bg-[#6e00ff] w-fit rounded-full text-xs sm:text-sm px-4 sm:px-6">
                 Learn More
               </Button>
-            </motion.div>
           </div>
         </div>
       </div>
@@ -250,17 +235,11 @@ export const Weare = () => {
             <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Innovative Design for Modern Businesses</span>.
           </h2>
           <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Elevate your brand with our cutting-edge design solutions. We craft visually stunning and user-focused experiences that drive engagement and set your business apart in today’s competitive landscape.
           </p>
-          <motion.div
-            variants={buttonVariants}
-            initial="rest"
-            whileHover="hover"
-          >
-            <Button className="mt-4 sm:mt-6 bg-[#9c40ff] text-black hover:bg-green-300 w-fit rounded-full text-xs sm:text-sm px-4 sm:px-6">
+            <Button className="mt-4 sm:mt-6 bg-[#9c40ff] text-white hover:bg-[#6e00ff] w-fit rounded-full text-xs sm:text-sm px-4 sm:px-6">
               Learn more
             </Button>
-          </motion.div>
         </div>
         <div className="flex gap-6 sm:gap-8 mt-6 sm:mt-0">
           <motion.div

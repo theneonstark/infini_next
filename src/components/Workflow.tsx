@@ -35,7 +35,7 @@ const steps = [
 
 export const Workflow = () => {
   return (
-    <div className="bg-black text-white py-16 px-4">
+    <div className="text-white py-16 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center relative">
         {steps.map((step, index) => (
           <motion.div

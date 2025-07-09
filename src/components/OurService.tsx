@@ -34,7 +34,7 @@ export default function OurService() {
   };
 
   return (
-    <div className="bg-black min-h-screen py-10 relative overflow-hidden">
+    <div className="min-h-screen py-10 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-24">
       <motion.h1
         className="text-center text-white font-bold text-5xl sm:text-6xl tracking-tighter"
@@ -159,39 +159,33 @@ export default function OurService() {
 
 const services = [
   {
-    title: "Web Design",
-    icon: "https://img.icons8.com/?size=100&id=49407&format=png&color=000000",
-    description:
-      "Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia.",
+    "title": "Web Design",
+    "icon": "https://img.icons8.com/?size=100&id=49407&format=png&color=000000",
+    "description": "Craft visually stunning and user-centric websites that captivate your audience and elevate your brand's online presence."
   },
   {
-    title: "Web Development",
-    icon: "https://img.icons8.com/?size=100&id=48250&format=png&color=ffffff",
-    description:
-      "Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia.",
+    "title": "Web Development",
+    "icon": "https://img.icons8.com/?size=100&id=48250&format=png&color=ffffff",
+    "description": "Build robust, scalable, and high-performance websites tailored to your business needs using cutting-edge technologies."
   },
   {
-    title: "Digital Marketing",
-    icon: "https://img.icons8.com/?size=100&id=52954&format=png&color=000000",
-    description:
-      "Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia.",
+    "title": "Digital Marketing",
+    "icon": "https://img.icons8.com/?size=100&id=52954&format=png&color=000000",
+    "description": "Drive growth with strategic digital marketing campaigns, optimizing reach and engagement across all digital channels."
   },
   {
-    title: "Accountant",
-    icon: "https://img.icons8.com/?size=100&id=65708&format=png&color=000000",
-    description:
-      "Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia.",
+    "title": "Accountant",
+    "icon": "https://img.icons8.com/?size=100&id=65708&format=png&color=000000",
+    "description": "Streamline your financial processes with expert accounting services, ensuring accuracy and compliance for your business."
   },
   {
-    title: "Consultation",
-    icon: "https://img.icons8.com/?size=100&id=48149&format=png&color=000000",
-    description:
-      "Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia.",
+    "title": "Consultation",
+    "icon": "https://img.icons8.com/?size=100&id=48149&format=png&color=000000",
+    "description": "Receive personalized guidance to navigate challenges and unlock new opportunities with our expert consultation services."
   },
   {
-    title: "Web Maintenance",
-    icon: "https://img.icons8.com/?size=100&id=SZIOLhqepltk&format=png&color=000000",
-    description:
-      "Habitant risus facilisis vitae curabitur hac nullam. Netus condimentum erat vestibulum sollicitudin sem tempor lacinia.",
-  },
+    "title": "Web Maintenance",
+    "icon": "https://img.icons8.com/?size=100&id=SZIOLhqepltk&format=png&color=000000",
+    "description": "Keep your website secure, updated, and running smoothly with our comprehensive maintenance and support services."
+  }
 ];

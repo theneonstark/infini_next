@@ -10,12 +10,13 @@ import { Weare } from "@/components/Weare";
 import OurService from "@/components/OurService";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
+import FloatingBubbles from "@/components/FloatingBubbles";
 
 
 export default function Home() {
   return (
     <>
-    <div className="overflow-x-hidden bg-black">
+    <div className="overflow-x-hidden">
       <Hero />
       <LogoTicker />
       <Weare/>

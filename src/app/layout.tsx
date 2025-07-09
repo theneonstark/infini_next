@@ -4,6 +4,7 @@ import clsx from "clsx";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import FloatingBubbles from "@/components/FloatingBubbles";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -19,7 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(dmSans.className, "antialiased")}>
+      <body className={clsx(dmSans.className, "antialiased", "bg-black")}>
+        <FloatingBubbles/>
         <Navbar/>
         {children}
         <Footer/>

@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
             <br /> That <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Matter.</span>
           </h2>
           <p className="text-gray-400 text-sm sm:text-md md:text-lg mb-6 sm:mb-8">
-            Dictumst porta ultricies tristique hac vestibulum himenaeos ligula. Cubilia sapien torquent at finibus accumsan et pellentesque class lacinia tristique.
+            We deliver transformative digital solutions that drive success. Our passion for innovation and commitment to excellence ensure your business stands out in a competitive landscape, creating impactful experiences that resonate with your audience.
           </p>
 
           <div className="space-y-3 sm:space-y-4">
