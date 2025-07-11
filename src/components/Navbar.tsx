@@ -40,7 +40,7 @@ export const Navbar = () => {
               <Link href="/about" className="text-opacity-60 text-white hover:text-opacity-100 transition">About</Link>
               <Link href="/features" className="text-opacity-60 text-white hover:text-opacity-100 transition">Features</Link>
               <Link href="/help" className="text-opacity-60 text-white hover:text-opacity-100 transition">Help</Link>
-              <Link href="/customers" className="text-opacity-60 text-white hover:text-opacity-100 transition">Customers</Link>
+              {/* <Link href="/customers" className="text-opacity-60 text-white hover:text-opacity-100 transition">Customers</Link> */}
               <Link href="/contact">
                 <button className="bg-white py-2 px-4 rounded-lg text-black">Get for free</button>
               </Link>

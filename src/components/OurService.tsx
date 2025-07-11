@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export default function OurService() {
   const containerVariants = {
@@ -102,14 +103,7 @@ export default function OurService() {
                 }}
               />
               <CardHeader>
-                <motion.img
-                  src={service.icon}
-                  alt={service.title}
-                  className="mx-auto"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ duration: 0.5, delay: idx * 0.2 }}
-                />
+                {service.icon}
                 <CardTitle className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent mt-2">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -159,33 +153,57 @@ export default function OurService() {
 
 const services = [
   {
-    "title": "Web Design",
-    "icon": "https://img.icons8.com/?size=100&id=49407&format=png&color=000000",
-    "description": "Craft visually stunning and user-centric websites that captivate your audience and elevate your brand's online presence."
-  },
-  {
     "title": "Web Development",
-    "icon": "https://img.icons8.com/?size=100&id=48250&format=png&color=ffffff",
+    "icon": <DotLottieReact
+      src="https://lottie.host/14515042-17c0-48ff-9e54-7b21da46d24f/xXoATTuAXC.lottie"
+      loop
+      autoplay
+    />,
     "description": "Build robust, scalable, and high-performance websites tailored to your business needs using cutting-edge technologies."
   },
   {
     "title": "Digital Marketing",
-    "icon": "https://img.icons8.com/?size=100&id=52954&format=png&color=000000",
+    "icon": <DotLottieReact
+      src="https://lottie.host/e8a7e635-16e9-4dbd-9026-7ca06b45f782/6NbnhmvtfB.lottie"
+      loop
+      autoplay
+    />,
     "description": "Drive growth with strategic digital marketing campaigns, optimizing reach and engagement across all digital channels."
   },
   {
     "title": "Accountant",
-    "icon": "https://img.icons8.com/?size=100&id=65708&format=png&color=000000",
+    "icon": <DotLottieReact
+      src="https://lottie.host/1dc27425-a00a-41ef-be14-6bff5169b240/L7cNLC9FDv.lottie"
+      loop
+      autoplay
+    />,
     "description": "Streamline your financial processes with expert accounting services, ensuring accuracy and compliance for your business."
   },
   {
-    "title": "Consultation",
-    "icon": "https://img.icons8.com/?size=100&id=48149&format=png&color=000000",
-    "description": "Receive personalized guidance to navigate challenges and unlock new opportunities with our expert consultation services."
+    "title": "Web Maintenance",
+    "icon": <DotLottieReact
+      src="https://lottie.host/1bef9f32-89aa-4bd3-8348-d1954d2622a8/P9uH5cmTmd.lottie"
+      loop
+      autoplay
+    />,
+    "description": "Keep your website secure, updated, and running smoothly with our comprehensive maintenance and support services."
   },
   {
-    "title": "Web Maintenance",
-    "icon": "https://img.icons8.com/?size=100&id=SZIOLhqepltk&format=png&color=000000",
+    "title": "App Development",
+    "icon": <DotLottieReact
+      src="https://lottie.host/6edbd8f3-201d-46e9-bfbc-6ca562f21bf5/X9QyFG6i5p.lottie"
+      loop
+      autoplay
+    />,
     "description": "Keep your website secure, updated, and running smoothly with our comprehensive maintenance and support services."
-  }
+  },
+  {
+    "title": "Consultation",
+    "icon": <DotLottieReact
+      src="https://lottie.host/10d760b7-8e9e-496f-934b-98e5e50130b8/PoERyZYoBQ.lottie"
+      loop
+      autoplay
+    />,
+    "description": "Receive personalized guidance to navigate challenges and unlock new opportunities with our expert consultation services."
+  },
 ];
