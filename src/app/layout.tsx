@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta name="facebook-domain-verification" content="ckrm6ng9qs91ukp9qxhgo7yy08tdxb" />
+      <meta name="google-site-verification" content="PUA7PODP-QIn6ZTVvPWEXyBQ6mYjxoHBrNf5BmnZOiU" />
       <body className={clsx(dmSans.className, "antialiased", "bg-black")}>
         <FloatingBubbles/>
         <Navbar/>
