@@ -20,13 +20,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta name="facebook-domain-verification" content="ckrm6ng9qs91ukp9qxhgo7yy08tdxb" />
-      <meta name="google-site-verification" content="PUA7PODP-QIn6ZTVvPWEXyBQ6mYjxoHBrNf5BmnZOiU" />
+      <head>
+        <meta name="facebook-domain-verification" content="ckrm6ng9qs91ukp9qxhgo7yy08tdxb" />
+        <meta name="google-site-verification" content="PUA7PODP-QIn6ZTVvPWEXyBQ6mYjxoHBrNf5BmnZOiU" />
+        {/* ✅ Google Analytics Script */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJKYFVG71S"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-GJKYFVG71S');
+            `,
+          }}
+        />
+      </head>
       <body className={clsx(dmSans.className, "antialiased", "bg-black")}>
-        <FloatingBubbles/>
-        <Navbar/>
+        <FloatingBubbles />
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
