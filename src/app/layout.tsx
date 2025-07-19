@@ -23,6 +23,8 @@ export default function RootLayout({
       <head>
         <meta name="facebook-domain-verification" content="ckrm6ng9qs91ukp9qxhgo7yy08tdxb" />
         <meta name="google-site-verification" content="PUA7PODP-QIn6ZTVvPWEXyBQ6mYjxoHBrNf5BmnZOiU" />
+      </head>
+      <body className={clsx(dmSans.className, "antialiased", "bg-black")}>
         {/* ✅ Google Analytics Script */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJKYFVG71S"></script>
         <script
@@ -35,8 +37,6 @@ export default function RootLayout({
             `,
           }}
         />
-      </head>
-      <body className={clsx(dmSans.className, "antialiased", "bg-black")}>
         <FloatingBubbles />
         <Navbar />
         {children}
