@@ -9,8 +9,8 @@ import FloatingBubbles from "@/components/FloatingBubbles";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "InfiniMorph Consulting",
-  description: "You Build company We grow",
+  title: "Infinimorph Consulting | All-in-One Digital, Branding & Tech Solutions",
+  description: "Empowering startups and businesses with web development, mobile apps, branding, design, marketing, and business consulting — all under one roof.",
 };
 
 export default function RootLayout({
