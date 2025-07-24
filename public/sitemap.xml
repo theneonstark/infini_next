@@ -11,29 +11,29 @@
   <!-- About Page -->
   <url>
     <loc>https://www.infinimorphconsulting.com/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <!-- Services Page -->
   <url>
     <loc>https://www.infinimorphconsulting.com/features</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <!-- Contact Page -->
   <url>
     <loc>https://www.infinimorphconsulting.com/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <!-- help Page -->
   <url>
     <loc>https://www.infinimorphconsulting.com/help</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <!-- Blog Page (if exists) -->

@@ -9,7 +9,7 @@ import FloatingBubbles from "@/components/FloatingBubbles";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Infinimorph Consulting | All-in-One Digital, Branding & Tech Solutions",
+  title: "InfiniMorph Consulting | All-in-One Digital, Branding & Tech Solutions",
   description: "Empowering startups and businesses with web development, mobile apps, branding, design, marketing, and business consulting — all under one roof.",
 };
 

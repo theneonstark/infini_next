@@ -175,12 +175,12 @@ export const Weare = () => {
           {/* First Text Container */}
           <div className="space-y-4 sm:space-y-6">
             <p className="text-xs sm:text-sm bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent font-medium">WHO WE ARE</p>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
               Innovative Solutions for Your <br />
               <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">
                 Online Success.
               </span>
-            </h1>
+            </h2>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-xl">
               Transform your digital presence with our cutting-edge tools and strategies. Our tailored solutions empower businesses to thrive, delivering measurable results through seamless integration and expert support.
             </p>

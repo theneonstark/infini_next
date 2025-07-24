@@ -37,14 +37,14 @@ export default function OurService() {
   return (
     <div className="min-h-screen py-10 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-24">
-      <motion.h1
+      <motion.h2
         className="text-center text-white font-bold text-5xl sm:text-6xl tracking-tighter"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         Our <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Services</span>
-      </motion.h1>
+      </motion.h2>
       <div className="max-w-2xl mx-auto mt-4 sm:mt-6">
         <motion.p
         className="text-center text-base sm:text-lg md:text-xl text-white/70"
