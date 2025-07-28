@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CallToAction } from "@/components/CallToAction";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Head from "next/head";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,6 +42,12 @@ const AboutPage: FC = () => {
     }
   }, []);
 
+      <Head>
+        <title>My website</title>
+				<meta name="description">
+					This text will appear in the description section of search engine results.
+				</meta>
+      </Head>
   return (
     <div className="text-white min-h-screen py-20">
       <div className="container mx-auto px-4">

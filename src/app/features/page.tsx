@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import Link from "next/link"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -35,6 +36,7 @@ export default function ServicesPage() {
 
 const services = [
   {
+    id: "web-design-development",
     title: "Web Design & Development",
     description:
       "Build modern, responsive websites that not only look great but perform seamlessly. From landing pages to complex platforms, we create tailored web experiences.",
@@ -42,6 +44,7 @@ const services = [
     icon: "💻",
   },
   {
+    id: "app-development",
     title: "App Development",
     description:
       "Build powerful mobile and web applications using cutting-edge technologies. From concept to deployment, we handle the entire development lifecycle.",
@@ -49,6 +52,7 @@ const services = [
     icon: "📱",
   },
   {
+    id: "graphic-designing",
     title: "Graphic Designing",
     description:
       "Craft compelling visual assets that elevate your brand identity across print and digital platforms. We blend creativity with strategy for stunning results.",
@@ -56,6 +60,7 @@ const services = [
     icon: "🖼️",
   },
   {
+    id: "ui-ux-design",
     title: "UI/UX Design",
     description:
       "Create intuitive and beautiful user interfaces that provide exceptional user experiences. Our design process focuses on user research, wireframing, prototyping, and testing.",
@@ -63,6 +68,7 @@ const services = [
     icon: "🎨",
   },
   {
+    id: "accountant-consulting",
     title: "Accountant Consulting",
     description:
       "We help businesses manage their finances with professional accounting consultations including taxation, bookkeeping, GST, and compliance.",
@@ -70,6 +76,7 @@ const services = [
     icon: "📊",
   },
   {
+    id: "video-editing",
     title: "Video Editing",
     description:
       "Engage your audience with professionally edited videos that tell your story. We specialize in short-form content, reels, promos, and more.",
@@ -77,6 +84,7 @@ const services = [
     icon: "🎬",
   },
   {
+    id: "3d-modals",
     title: "3D Modals",
     description:
       "Bring your concepts to life with high-quality 3D modeling and rendering. Perfect for product demos, architecture, and animated visuals.",
@@ -84,6 +92,7 @@ const services = [
     icon: "🧊",
   },
   {
+    id: "trademark-branding",
     title: "Trademark & Branding",
     description:
       "Protect your brand identity and make it unforgettable. We offer trademark registration along with comprehensive branding services.",
@@ -91,6 +100,7 @@ const services = [
     icon: "™️",
   },
   {
+    id: "digital-marketing",
     title: "Digital Marketing",
     description:
       "Reach your ideal audience and grow your online presence with data-driven digital marketing strategies tailored to your business goals.",
@@ -98,6 +108,7 @@ const services = [
     icon: "📈",
   },
   {
+    id: "custom-software-development",
     title: "Custom Software Development",
     description:
       "Get tailor-made software solutions that streamline your business operations and give you a competitive edge.",
@@ -155,6 +166,7 @@ const services = [
               </div>
 
               <div className="border-t border-white/10 pt-4">
+              <Link href={`/features/${service.id}`}>
                 <motion.button
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
@@ -162,6 +174,7 @@ const services = [
                 >
                   Get Started
                 </motion.button>
+                </Link>
               </div>
             </div>
           ))}
