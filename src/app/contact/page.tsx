@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
+import Link from "next/link";
 
 interface FormData {
   name: string
@@ -167,6 +168,9 @@ export default function ContactPage() {
                       <h3 className="font-semibold text-lg">Office</h3>
                       <p className="text-gray-300">Jaitpur, Badarpur</p>
                       <p className="text-gray-300">New Delhi - 110044</p>
+                      <Button className="bg-purple-700 my-2">
+                        <Link href={'https://maps.app.goo.gl/1EMZ2QoekqBedKBe9'} target="_blank">Get Direction</Link>
+                      </Button>
                     </div>
                   </div>
                 </CardContent>

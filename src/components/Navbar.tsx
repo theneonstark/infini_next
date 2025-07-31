@@ -37,6 +37,7 @@ export const Navbar = () => {
               </button>
             </div>
             <nav className="hidden sm:flex text-white gap-6 items-center">
+              <Link href="/" className="text-opacity-60 text-white hover:text-opacity-100 transition">Home</Link>
               <Link href="/about" className="text-opacity-60 text-white hover:text-opacity-100 transition">About</Link>
               <Link href="/features" className="text-opacity-60 text-white hover:text-opacity-100 transition">Features</Link>
               <Link href="/help" className="text-opacity-60 text-white hover:text-opacity-100 transition">Help</Link>
