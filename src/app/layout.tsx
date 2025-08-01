@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="canonical" href="https://www.infinimorphconsulting.com" />
         <meta name="facebook-domain-verification" content="ckrm6ng9qs91ukp9qxhgo7yy08tdxb" />
         <meta name="google-site-verification" content="PUA7PODP-QIn6ZTVvPWEXyBQ6mYjxoHBrNf5BmnZOiU" />
         <meta name="keywords" content="web development company India, ecommerce development, SEO services, UI UX design agency, mobile app development, startup branding, Infinimorph Consulting" />
