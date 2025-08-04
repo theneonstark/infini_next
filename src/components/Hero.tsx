@@ -24,7 +24,7 @@ export const Hero = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 1.5,
+        duration: 0.5,
         ease: 'power3.out',
         scrollTrigger: {
           trigger: containerRef.current,
@@ -39,7 +39,7 @@ export const Hero = () => {
       {
         scale: 1,
         opacity: 1,
-        duration: 1.2,
+        duration: 0.2,
         ease: 'elastic.out(1, 0.5)',
         scrollTrigger: {
           trigger: titleRef.current,
@@ -54,7 +54,7 @@ export const Hero = () => {
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 0.5,
         delay: 0.3,
         ease: 'power2.out',
         scrollTrigger: {
