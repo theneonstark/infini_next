@@ -51,7 +51,7 @@ export const Weare = () => {
       gsap.from(imageRef.current, {
         opacity: 0,
         x: -100,
-        duration: 1,
+        duration: 0.5,
         ease: "power3.out",
         scrollTrigger: {
           trigger: imageRef.current,
@@ -64,7 +64,7 @@ export const Weare = () => {
       gsap.from(featureBoxRef.current, {
         opacity: 0,
         y: 50,
-        duration: 0.8,
+        duration: 0.5,
         ease: "power3.out",
         scrollTrigger: {
           trigger: featureBoxRef.current,
@@ -91,7 +91,7 @@ export const Weare = () => {
       gsap.from(textContentRef.current, {
         opacity: 0,
         x: 100,
-        duration: 1,
+        duration: 0.8,
         ease: "power3.out",
         scrollTrigger: {
           trigger: textContentRef.current,
@@ -118,7 +118,7 @@ export const Weare = () => {
       gsap.from(bottomSectionRef.current, {
         opacity: 0,
         y: 100,
-        duration: 1,
+        duration: 0.6,
         ease: "power3.out",
         scrollTrigger: {
           trigger: bottomSectionRef.current,
@@ -144,14 +144,14 @@ export const Weare = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="text-white py-8 sm:py-12 lg:py-16 px-4 sm:px-6 md:px-10 lg:px-20"
     >
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-6 lg:gap-12 ">
         {/* Left Side: Image + Overlay Box */}
         <div className="relative">
           <Image
             ref={imageRef}
-            src="/assets/images/teamwork.jpg"
+            src="/assets/images/teamwork.webp"
             alt="Team working"
-            className="w-full h-auto object-cover grayscale rounded-xl"
+            className="w-full h-auto object-cover grayscale hover:grayscale-0  rounded-xl"
             width={700}
             height={700}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 700px"

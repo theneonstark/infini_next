@@ -14,35 +14,29 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
+    name: "Sahil Gautam",
     role: "Product Manager",
     quote: "This product has transformed our workflow. The intuitive interface and powerful features make our team more efficient than ever.",
     avatar: "/"
   },
   {
-    name: "Michael Chen",
+    name: "Nitesh Kumar",
     role: "Software Engineer",
     quote: "The attention to detail in this application is remarkable. It's been a game-changer for our development process.",
     avatar: "/"
   },
   {
-    name: "Emily Davis",
+    name: "Siddharth Prakash Maurya",
     role: "Marketing Director",
     quote: "Outstanding customer support and continuous updates make this a must-have tool for any serious marketing team.",
     avatar: "/"
   },
   {
-    name: "James Wilson",
+    name: "Shikhar Panday",
     role: "CEO",
     quote: "The scalability and reliability of this solution have been crucial for our company's growth. Highly recommended!",
     avatar: "/"
   },
-  {
-    name: "Lisa Anderson",
-    role: "Designer",
-    quote: "The creative freedom this tool provides is unmatched. It's helped me bring my visions to life effortlessly.",
-    avatar: "/"
-  }
 ]
 
 export default function Testimonials() {

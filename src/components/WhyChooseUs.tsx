@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
           {/* Main screen mockup */}
           <div className="rounded-xl overflow-hidden border border-gray-800">
             <Image 
-              src="/assets/images/product.avif" 
+              src="/assets/images/product.webp" 
               alt="Mockup" 
               className="w-full h-auto object-cover"
               width={1000} 

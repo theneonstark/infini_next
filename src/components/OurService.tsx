@@ -10,6 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import Link from "next/link";
 
 export default function OurService() {
   const containerVariants = {
@@ -37,39 +38,25 @@ export default function OurService() {
   return (
     <div className="min-h-screen py-10 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-24">
-      <motion.h2
-        className="text-center text-white font-bold text-5xl sm:text-6xl tracking-tighter"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        Our <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Services</span>
-      </motion.h2>
-      <div className="max-w-2xl mx-auto mt-4 sm:mt-6">
-        <motion.p
-        className="text-center text-base sm:text-lg md:text-xl text-white/70"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
+        <motion.h2
+          className="text-center text-white font-bold text-5xl sm:text-6xl tracking-tighter"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          Our <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Services</span>
+        </motion.h2>
+        <div className="max-w-2xl mx-auto mt-4 sm:mt-6">
+          <motion.p
+            className="text-center text-base sm:text-lg md:text-xl text-white/70"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             We follow a proven methodology to ensure your project is delivered on time, within budget, and exceeds expectations.
-      </motion.p>
+          </motion.p>
+        </div>
       </div>
-      </div>
-      
-      {/* Animated Background Glow */}
-      <motion.div
-        className="absolute top-[20%] left-[5%] w-[90%] h-[60%] rounded-full bg-gradient-to-r from-green-400/10 to-green-400/0 blur-[50px] pointer-events-none"
-        animate={{
-          scale: [1, 1.1, 1],
-          opacity: [0.3, 0.5, 0.3],
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          repeatType: "reverse"
-        }}
-      />
 
       <motion.div
         className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto px-4"
@@ -78,17 +65,7 @@ export default function OurService() {
         animate="visible"
       >
         {services.map((service, idx) => (
-          <motion.div
-            key={idx}
-            variants={cardVariants}
-            whileHover={{
-              scale: 1.05,
-              transition: { duration: 0.3 }
-            }}
-          >
-            <Card
-              className="bg-black text-white text-center p-5 border border-t border-white/70 relative overflow-hidden group"
-            >
+            <Card className="bg-black border-none text-white text-center p-5 relative overflow-hidden group" key={idx}>
               {/* Animated Border Effect */}
               <motion.div
                 className="absolute inset-0 border-2 border-transparent"
@@ -113,23 +90,24 @@ export default function OurService() {
               </CardContent>
               <CardFooter className="justify-center">
                 <motion.div
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.1,
                     boxShadow: "0 0 15px rgba(156, 64, 255, 0.5)"
                   }}
                   whileTap={{ scale: 0.95 }}
                   className="relative"
                 >
+                  <Link href={service.link}>
                   <Button
                     variant="outline"
                     className="border-[#9c40ff] text-[#9c40ff] hover:bg-[#9c40ff] hover:text-white transition-all duration-300"
                   >
-                    Get Started
+                      Get Started
                   </Button>
+                    </Link>
                 </motion.div>
               </CardFooter>
             </Card>
-          </motion.div>
         ))}
       </motion.div>
 
@@ -140,12 +118,14 @@ export default function OurService() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
       >
-        <Button
+        <Link href={'/features'}>
+          <Button
           variant="outline"
           className="border-[#9c40ff] text-[#9c40ff] hover:bg-[#9c40ff] hover:text-white text-lg px-8 py-6"
         >
           Explore More Services
         </Button>
+        </Link>
       </motion.div>
     </div>
   );
@@ -159,7 +139,8 @@ const services = [
       loop
       autoplay
     />,
-    "description": "Build robust, scalable, and high-performance websites tailored to your business needs using cutting-edge technologies."
+    "description": "Build robust, scalable, and high-performance websites tailored to your business needs using cutting-edge technologies.",
+    "link" : "/features/web-design-development",
   },
   {
     "title": "Digital Marketing",
@@ -168,7 +149,8 @@ const services = [
       loop
       autoplay
     />,
-    "description": "Drive growth with strategic digital marketing campaigns, optimizing reach and engagement across all digital channels."
+    "description": "Drive growth with strategic digital marketing campaigns, optimizing reach and engagement across all digital channels.",
+    "link" : "/features/digital-marketing"
   },
   {
     "title": "Accountant",
@@ -177,7 +159,8 @@ const services = [
       loop
       autoplay
     />,
-    "description": "Streamline your financial processes with expert accounting services, ensuring accuracy and compliance for your business."
+    "description": "Streamline your financial processes with expert accounting services, ensuring accuracy and compliance for your business.",
+    "link" : "/features/accountant-consulting"
   },
   {
     "title": "Web Maintenance",
@@ -186,7 +169,8 @@ const services = [
       loop
       autoplay
     />,
-    "description": "Keep your website secure, updated, and running smoothly with our comprehensive maintenance and support services."
+    "description": "Keep your website secure, updated, and running smoothly with our comprehensive maintenance and support services.",
+    "link" : "/features/custom-software-development"
   },
   {
     "title": "App Development",
@@ -195,7 +179,8 @@ const services = [
       loop
       autoplay
     />,
-    "description": "Keep your website secure, updated, and running smoothly with our comprehensive maintenance and support services."
+    "description": "Keep your website secure, updated, and running smoothly with our comprehensive maintenance and support services.",
+    "link" : "/features/app-development"
   },
   {
     "title": "Consultation",
@@ -204,6 +189,7 @@ const services = [
       loop
       autoplay
     />,
-    "description": "Receive personalized guidance to navigate challenges and unlock new opportunities with our expert consultation services."
+    "description": "Receive personalized guidance to navigate challenges and unlock new opportunities with our expert consultation services.",
+    "link" : "/contact"
   },
 ];
