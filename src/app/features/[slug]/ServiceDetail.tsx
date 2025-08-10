@@ -120,7 +120,7 @@ export default function ServiceDetailPage() {
     deliverables: "Complete Website + 3 Months Support",
     rating: 4.9,
     reviews: 127,
-    image: "/placeholder.svg?height=400&width=600&text=Web+Development",
+    image: "/assets/images/Web Design & Development.jpg",
     features: [
       "Responsive Design",
       "SEO Optimization",
@@ -266,7 +266,7 @@ export default function ServiceDetailPage() {
     deliverables: "Complete App + App Store Deployment",
     rating: 4.8,
     reviews: 89,
-    image: "/placeholder.svg?height=400&width=600&text=App+Development",
+    image: "/assets/images/App_Dev.png",
     features: [
       "Native iOS & Android",
       "Cross-Platform Development",
@@ -412,7 +412,7 @@ export default function ServiceDetailPage() {
     deliverables: "Custom Graphics + Source Files",
     rating: 4.7,
     reviews: 65,
-    image: "/placeholder.svg?height=400&width=600&text=Graphic+Design",
+    image: "/assets/images/graphic.jpg",
     features: [
       "Logo Design",
       "Branding Materials",
@@ -544,7 +544,7 @@ export default function ServiceDetailPage() {
     deliverables: "Wireframes + Prototypes + Design System",
     rating: 4.8,
     reviews: 78,
-    image: "/placeholder.svg?height=400&width=600&text=UI+UX+Design",
+    image: "/assets/images/UIUX.webp",
     features: [
       "User Research",
       "Wireframing",
@@ -678,7 +678,7 @@ export default function ServiceDetailPage() {
     deliverables: "Financial Reports + Tax Strategy",
     rating: 4.6,
     reviews: 53,
-    image: "/placeholder.svg?height=400&width=600&text=Accountant+Consulting",
+    image: "/assets/images/acc_consulting.jpg",
     features: [
       "Bookkeeping",
       "Tax Planning",
@@ -811,7 +811,7 @@ export default function ServiceDetailPage() {
     deliverables: "Edited Video + Source Files",
     rating: 4.9,
     reviews: 92,
-    image: "/placeholder.svg?height=400&width=600&text=Video+Editing",
+    image: "/assets/images/video_editing.webp",
     features: [
       "Video Editing",
       "Color Grading",
@@ -944,7 +944,7 @@ export default function ServiceDetailPage() {
     deliverables: "3D Models + Textures",
     rating: 4.7,
     reviews: 47,
-    image: "/placeholder.svg?height=400&width=600&text=3D+Modeling",
+    image: "/assets/images/3d-Models.webp",
     features: [
       "3D Modeling",
       "Texturing",
@@ -1074,7 +1074,7 @@ export default function ServiceDetailPage() {
     deliverables: "Brand Identity + Trademark Filing",
     rating: 4.8,
     reviews: 60,
-    image: "/placeholder.svg?height=400&width=600&text=Trademark+Branding",
+    image: "/assets/images/Trademark.webp",
     features: [
       "Brand Strategy",
       "Logo Design",
@@ -1205,7 +1205,7 @@ export default function ServiceDetailPage() {
     deliverables: "Marketing Strategy + Reports",
     rating: 4.9,
     reviews: 110,
-    image: "/placeholder.svg?height=400&width=600&text=Digital+Marketing",
+    image: "/assets/images/DM.jpg",
     features: [
       "SEO",
       "Social Media Marketing",
@@ -1338,7 +1338,7 @@ export default function ServiceDetailPage() {
     deliverables: "Custom Software + Documentation",
     rating: 4.8,
     reviews: 72,
-    image: "/placeholder.svg?height=400&width=600&text=Custom+Software",
+    image: "/assets/images/csd.jpg",
     features: [
       "Custom Development",
       "Scalable Architecture",
@@ -1562,8 +1562,8 @@ export default function ServiceDetailPage() {
               src={currentService.image || "/placeholder.svg"}
               alt={currentService.title}
               className="w-full h-96 object-cover rounded-lg shadow-lg"
-              width={200}
-              height={200}
+              width={500}
+              height={500}
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
               <Button variant="secondary" size="lg" className="bg-white/90 text-black hover:bg-white">
