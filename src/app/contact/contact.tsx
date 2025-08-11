@@ -169,7 +169,7 @@ export default function ContactPage() {
                       <p className="text-gray-300">Jaitpur, Badarpur</p>
                       <p className="text-gray-300">New Delhi - 110044</p>
                       <Button className="bg-purple-700 my-2">
-                        <Link href={'https://maps.app.goo.gl/1EMZ2QoekqBedKBe9'} target="_blank">Get Direction</Link>
+                        <Link href={'https://maps.app.goo.gl/XGXvqCBA59KrZ3Jb8'} target="_blank">Get Direction</Link>
                       </Button>
                     </div>
                   </div>
