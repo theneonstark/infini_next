@@ -11,7 +11,7 @@ import FloatingBubbles from "@/components/FloatingBubbles";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Web Development Company In Delhi NCR | InfiniMorph Consulting | Home",
+  title: "Web Development Service In NCR Dehli  All In One Bussines And Tech service-Infinimorph consulting",
   description:
     "2000+ World Class Websites made. 1k+ Satisfied Clients. Contact the Top Web Development Company in Delhi-NCR for Best Web Designing Services.",
 };

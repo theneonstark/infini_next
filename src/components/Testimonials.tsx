@@ -17,23 +17,29 @@ const testimonials = [
     name: "Sahil Gautam",
     role: "Product Manager",
     quote: "This product has transformed our workflow. The intuitive interface and powerful features make our team more efficient than ever.",
-    avatar: "/"
+    avatar: "/assets/clients/sahil.png"
   },
   {
-    name: "Nitesh Kumar",
+    name: "Mohd Shahid",
     role: "Software Engineer",
     quote: "The attention to detail in this application is remarkable. It's been a game-changer for our development process.",
-    avatar: "/"
+    avatar: "/assets/clients/shahid.png"
+  },
+  {
+    name: "Sabra Khatoon",
+    role: "Digital Marketing Specialist",
+    quote: "Exceptional support and regular updates make this tool indispensable for any dedicated marketing team.",
+    avatar: "/assets/clients/sabra.png"
   },
   {
     name: "Siddharth Prakash Maurya",
     role: "Marketing Director",
     quote: "Outstanding customer support and continuous updates make this a must-have tool for any serious marketing team.",
-    avatar: "/"
+    avatar: "/assets/clients/siddharth.png"
   },
   {
     name: "Shikhar Panday",
-    role: "CEO",
+    role: "CEO - Farm Dairy",
     quote: "The scalability and reliability of this solution have been crucial for our company's growth. Highly recommended!",
     avatar: "/"
   },
@@ -66,8 +72,8 @@ export default function Testimonials() {
                         src={testimonial.avatar}
                         alt={testimonial.name}
                         className="w-12 h-12 rounded-full mr-4"
-                        width={500}
-                        height={500}
+                        width={600}
+                        height={600}
                       />
                       <div>
                         <h3 className="text-lg font-semibold">{testimonial.name}</h3>
