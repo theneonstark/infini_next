@@ -71,6 +71,7 @@ interface ServiceData {
   rating: number
   reviews: number
   image: string
+  videoUrl: string
   features: string[]
   packages: ServicePackage[]
   process: ProcessStep[]
@@ -107,6 +108,8 @@ export default function ServiceDetailPage() {
     timeline: "",
   })
 
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
   // Service data with detailed information
   const serviceData: ServiceDataMap = {
   "web-design-development": {
@@ -121,6 +124,7 @@ export default function ServiceDetailPage() {
     rating: 4.9,
     reviews: 127,
     image: "/assets/images/Web Design & Development.jpg",
+    videoUrl: "https://www.youtube.com/embed/Wr5f3W8tn_w?rel=0&modestbranding=1&playsinline=1",
     features: [
       "Responsive Design",
       "SEO Optimization",
@@ -267,6 +271,7 @@ export default function ServiceDetailPage() {
     rating: 4.8,
     reviews: 89,
     image: "/assets/images/App_Dev.png",
+    videoUrl: "/",
     features: [
       "Native iOS & Android",
       "Cross-Platform Development",
@@ -413,6 +418,7 @@ export default function ServiceDetailPage() {
     rating: 4.7,
     reviews: 65,
     image: "/assets/images/graphic.jpg",
+    videoUrl: "/",
     features: [
       "Logo Design",
       "Branding Materials",
@@ -545,6 +551,7 @@ export default function ServiceDetailPage() {
     rating: 4.8,
     reviews: 78,
     image: "/assets/images/UIUX.webp",
+    videoUrl: "/",
     features: [
       "User Research",
       "Wireframing",
@@ -679,6 +686,7 @@ export default function ServiceDetailPage() {
     rating: 4.6,
     reviews: 53,
     image: "/assets/images/acc_consulting.jpg",
+    videoUrl: "/",
     features: [
       "Bookkeeping",
       "Tax Planning",
@@ -812,6 +820,7 @@ export default function ServiceDetailPage() {
     rating: 4.9,
     reviews: 92,
     image: "/assets/images/video_editing.webp",
+    videoUrl: "/",
     features: [
       "Video Editing",
       "Color Grading",
@@ -945,6 +954,7 @@ export default function ServiceDetailPage() {
     rating: 4.7,
     reviews: 47,
     image: "/assets/images/3d-Models.webp",
+    videoUrl: "/",
     features: [
       "3D Modeling",
       "Texturing",
@@ -1075,6 +1085,7 @@ export default function ServiceDetailPage() {
     rating: 4.8,
     reviews: 60,
     image: "/assets/images/Trademark.webp",
+    videoUrl: "/",
     features: [
       "Brand Strategy",
       "Logo Design",
@@ -1206,6 +1217,7 @@ export default function ServiceDetailPage() {
     rating: 4.9,
     reviews: 110,
     image: "/assets/images/DM.jpg",
+    videoUrl: "/",
     features: [
       "SEO",
       "Social Media Marketing",
@@ -1339,6 +1351,7 @@ export default function ServiceDetailPage() {
     rating: 4.8,
     reviews: 72,
     image: "/assets/images/csd.jpg",
+    videoUrl: "/",
     features: [
       "Custom Development",
       "Scalable Architecture",
@@ -1477,14 +1490,11 @@ export default function ServiceDetailPage() {
     alert("Thank you for your inquiry! We'll get back to you within 24 hours.")
   }
 
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
-    <>
-    {/* Add dynamic title */}
-      <Head>
-        <title>{currentService.title} - Modern Services</title>
-        <meta name="description" content={currentService.subtitle} />
-      </Head>
-      <div className="min-h-screen py-20">
+    <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         {/* Breadcrumb */}
         <div className="flex items-center space-x-2 text-sm text-gray-400 mb-8">
@@ -1561,18 +1571,48 @@ export default function ServiceDetailPage() {
             <Image
               src={currentService.image || "/placeholder.svg"}
               alt={currentService.title}
-              className="w-full h-96 object-cover rounded-lg shadow-lg"
+              className="w-full h-full object-cover rounded-lg shadow-lg"
               width={500}
               height={500}
             />
             <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
-              <Button variant="secondary" size="lg" className="bg-white/90 text-black hover:bg-white">
+              <Button 
+                variant="secondary" 
+                size="lg" 
+                className="bg-white/90 text-black hover:bg-white"
+                onClick={openModal}
+              >
                 <Play className="w-5 h-5 mr-2" />
                 Watch Demo
               </Button>
             </div>
           </div>
         </div>
+
+        {/* Modal for YouTube Video */}
+        {isModalOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+            <div className="bg-gray-900 p-6 rounded-lg w-full max-w-3xl relative">
+              <button 
+                className="absolute top-2 right-2 text-white hover:text-gray-300"
+                onClick={closeModal}
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <div className="aspect-w-16 aspect-h-9">
+                <iframe
+                  src={currentService.videoUrl || "https://www.youtube.com/embed/dQw4w9WgXcQ"}
+                  title="Demo Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-96 rounded-lg"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Main Content Tabs */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-16">
@@ -1639,7 +1679,6 @@ export default function ServiceDetailPage() {
                   )}
                   <CardHeader className="text-center">
                     <CardTitle className="text-2xl">{pkg.name}</CardTitle>
-                    {/* <div className="text-3xl font-bold text-white">{pkg.price}</div> */}
                     <CardDescription>{pkg.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -1890,7 +1929,7 @@ export default function ServiceDetailPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="outline">
               <Phone className="w-4 h-4 mr-2" />
-              Call: (555) 123-4567
+              Call: (+91) 92115-79757
             </Button>
             <Button variant="outline">
               <MessageCircle className="w-4 h-4 mr-2" />
@@ -1898,12 +1937,11 @@ export default function ServiceDetailPage() {
             </Button>
             <Button variant="outline">
               <Mail className="w-4 h-4 mr-2" />
-              Email: hello@modernservices.com
+              Email: info@infinimorphconsulting.com
             </Button>
           </div>
         </div>
       </div>
     </div>
-    </>
-  )
+  );
 }
