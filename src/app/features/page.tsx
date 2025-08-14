@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import ServicesPage from "./features";
 
 export const metadata: Metadata = {
-  title: "Features | InfiniMorph Consulting",
+  title: "Our Features – Infinimorph Consulting’s Edge in Digital",
   description:
-    "Learn about InfiniMorph Consulting, a dynamic team offering comprehensive digital and business solutions, including web design, development, accounting, graphic design, logo creation, and trademark services.",
+    "Explore the powerful features of Infinimorph Consulting that set us apart in web development, app design, e-commerce solutions, branding, and digital marketing. Delivering innovation and results for your business growth.",
   keywords: "web development, mobile apps, branding, graphic design, accounting, trademark services, InfiniMorph Consulting",
 };
 
