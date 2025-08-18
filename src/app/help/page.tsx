@@ -16,6 +16,7 @@ import {
   Download,
   ExternalLink,
 } from "lucide-react"
+import Link from "next/link"
 
 export default function HelpPage() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -104,17 +105,23 @@ export default function HelpPage() {
             icon: <MessageCircle className="w-8 h-8 text-blue-400" />,
             title: "Live Chat",
             desc: "Get instant help from our support team",
-            btn: <Button className="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">Start Chat</Button>
+            btn: <Link href={'https://wa.me/919211579757'}>
+            <Button className="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">Start Chat</Button>
+            </Link>
           }, {
             icon: <Phone className="w-8 h-8 text-green-400" />,
             title: "Phone Support",
             desc: "Call us for immediate assistance",
-            btn: <Button className="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">Call Now</Button>
+            btn: <Link href={'tel:+91 9211579757'}>
+            <Button className="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">Call Now</Button>
+            </Link>
           }, {
             icon: <Mail className="w-8 h-8 text-purple-400" />,
             title: "Email Support",
             desc: "Send us a detailed message",
-            btn: <Button className="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">Send Email</Button>
+            btn: <Link href={'mailto:info@infinimorphconsulting.com'}>
+            <Button className="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">Send Mail</Button>
+            </Link>
           }].map((item, i) => (
             <Card key={i} className="bg-white/10 backdrop-blur-md border border-white/10 hover:shadow-lg transition-shadow cursor-pointer text-center">
               <CardContent className="pt-8 pb-6 text-gray-200">
@@ -185,14 +192,18 @@ export default function HelpPage() {
               might have.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg">
+              <Link href={"/contact"}>
+                <Button size="lg">
                 Contact Support
                 <MessageCircle className="w-4 h-4 ml-2" />
               </Button>
-              <Button size="lg" className="bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">
+              </Link>
+              <Link href={'/contact'}>
+                <Button size="lg" className="bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">
                 Schedule a Call
                 <Phone className="w-4 h-4 ml-2" />
               </Button>
+              </Link>
             </div>
           </CardContent>
         </Card>

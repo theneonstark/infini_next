@@ -207,12 +207,12 @@ export default function ServiceDetailPage() {
       {
         title: "E-commerce Fashion Store",
         description: "Modern online store with 300% increase in conversions",
-        image: "/placeholder.svg?height=200&width=300&text=Fashion+Store",
+        image: "/assets/projects/ecommerce.png",
       },
       {
         title: "Corporate Business Website",
         description: "Professional website for B2B lead generation",
-        image: "/placeholder.svg?height=200&width=300&text=Corporate+Site",
+        image: "/assets/projects/b2b.png",
       },
       {
         title: "Restaurant Chain Platform",
@@ -354,17 +354,17 @@ export default function ServiceDetailPage() {
       {
         title: "Fitness Tracking App",
         description: "Health app with 100K+ downloads and 4.8 rating",
-        image: "/placeholder.svg?height=200&width=300&text=Fitness+App",
+        image: "/assets/projects/fitness.png",
       },
       {
         title: "Food Delivery Platform",
         description: "Multi-vendor food delivery app with real-time tracking",
-        image: "/placeholder.svg?height=200&width=300&text=Food+App",
+        image: "/assets/projects/food.png",
       },
       {
         title: "Social Networking App",
         description: "Community-based social app with messaging features",
-        image: "/placeholder.svg?height=200&width=300&text=Social+App",
+        image: "/assets/projects/social.png",
       },
     ],
     testimonials: [
@@ -497,17 +497,17 @@ export default function ServiceDetailPage() {
       {
         title: "Startup Logo Design",
         description: "Modern logo for a tech startup",
-        image: "/placeholder.svg?height=200&width=300&text=Startup+Logo",
+        image: "/assets/projects/startup.png",
       },
       {
         title: "Marketing Campaign",
         description: "Full set of marketing materials for a retail brand",
-        image: "/placeholder.svg?height=200&width=300&text=Marketing+Campaign",
+        image: "/assets/projects/marketing.png",
       },
       {
         title: "Social Media Kit",
         description: "Engaging social media graphics for a lifestyle brand",
-        image: "/placeholder.svg?height=200&width=300&text=Social+Media+Kit",
+        image: "/assets/projects/mediakit.png",
       },
     ],
     testimonials: [
@@ -632,17 +632,17 @@ export default function ServiceDetailPage() {
       {
         title: "Mobile App UI",
         description: "Intuitive UI for a productivity app",
-        image: "/placeholder.svg?height=200&width=300&text=Mobile+App+UI",
+        image: "/assets/projects/mobileui.png",
       },
       {
         title: "E-commerce Interface",
         description: "User-friendly design for an online store",
-        image: "/placeholder.svg?height=200&width=300&text=E-commerce+UI",
+        image: "/assets/projects/ecommerceui.png",
       },
       {
         title: "Dashboard Design",
         description: "Clean and functional dashboard for analytics",
-        image: "/placeholder.svg?height=200&width=300&text=Dashboard+UI",
+        image: "/assets/projects/dashboardui.png",
       },
     ],
     testimonials: [
@@ -766,17 +766,17 @@ export default function ServiceDetailPage() {
       {
         title: "Small Business Accounting",
         description: "Streamlined financials for a retail chain",
-        image: "/placeholder.svg?height=200&width=300&text=Small+Business+Accounting",
+        image: "/assets/projects/businessacc.png",
       },
       {
         title: "Tax Optimization",
         description: "Saved $50K in taxes for a tech startup",
-        image: "/placeholder.svg?height=200&width=300&text=Tax+Optimization",
+        image: "/assets/projects/tax.png",
       },
       {
         title: "Corporate Financials",
         description: "Managed finances for a multinational firm",
-        image: "/placeholder.svg?height=200&width=300&text=Corporate+Financials",
+        image: "/assets/projects/corporate.png",
       },
     ],
     testimonials: [
@@ -900,17 +900,17 @@ export default function ServiceDetailPage() {
       {
         title: "Promotional Video",
         description: "Engaging ad for a product launch",
-        image: "/placeholder.svg?height=200&width=300&text=Promo+Video",
+        image: "/assets/projects/promotional.png",
       },
       {
         title: "Corporate Video",
         description: "Professional video for company branding",
-        image: "/placeholder.svg?height=200&width=300&text=Corporate+Video",
+        image: "/assets/projects/corporatev.png",
       },
       {
         title: "Short Film",
         description: "Cinematic editing for an award-winning short",
-        image: "/placeholder.svg?height=200&width=300&text=Short+Film",
+        image: "/assets/projects/shortfilm.png",
       },
     ],
     testimonials: [
@@ -1163,17 +1163,17 @@ export default function ServiceDetailPage() {
       {
         title: "Tech Brand Identity",
         description: "Created a unique brand for a tech startup",
-        image: "/placeholder.svg?height=200&width=300&text=Tech+Brand",
+        image: "/assets/projects/techbrand.png",
       },
       {
         title: "Retail Branding",
         description: "Developed a retail brand with trademark protection",
-        image: "/placeholder.svg?height=200&width=300&text=Retail+Brand",
+        image: "/assets/projects/retailbrand.png",
       },
       {
         title: "Global Brand",
         description: "International brand with global trademarks",
-        image: "/placeholder.svg?height=200&width=300&text=Global+Brand",
+        image: "/assets/projects/globalbrand.png",
       },
     ],
     testimonials: [
@@ -1297,7 +1297,7 @@ export default function ServiceDetailPage() {
       {
         title: "SEO Campaign",
         description: "Increased organic traffic by 150% for an e-commerce site",
-        image: "/placeholder.svg?height=200&width=300&text=SEO+Campaign",
+        image: "/assets/projects/seocampaign.png",
       },
       {
         title: "Social Media Ads",
@@ -1674,7 +1674,7 @@ export default function ServiceDetailPage() {
                 <Card key={index} className={`relative ${pkg.popular ? "border-white shadow-lg" : ""} bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg text-white`} >
                   {pkg.popular && (
                     <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                      <Badge className="bg-white text-white-foreground">Most Popular</Badge>
+                      <Badge className="bg-white text-black hover:text-white">Most Popular</Badge>
                     </div>
                   )}
                   <CardHeader className="text-center">
