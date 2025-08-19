@@ -17,37 +17,37 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   // Check slug and update metadata accordingly
   if (slug === 'web-design-development') {
     metadata = {
-      title: 'Web Development | InfiniMorph Consulting',
+      title: 'Web Design & Development with Build Stunning Websites | Infinimorph Consulting.',
       description:
-        'Explore our expert web development services at InfiniMorph Consulting, offering cutting-edge website design and development tailored to your business needs.',
+        'Build a powerful online presence with Infinimorph Consultings Web Design & Development services. We create modern, responsive, and SEO-optimized websites that help startups and businesses scale faster.',
       keywords: 'web development, website design, web solutions, InfiniMorph Consulting',
     };
   } else if (slug === 'app-development') {
     metadata = {
-      title: 'App Development | InfiniMorph Consulting',
+      title: 'Custom App Development Services | Infinimorph Consulting',
       description:
-        'Discover our mobile app development services at InfiniMorph Consulting, delivering innovative and scalable applications for iOS and Android platforms.',
+        'Infinimorph Consulting provides custom App Development services that help startups and businesses create scalable, user-friendly, and innovative mobile apps designed to boost engagement, efficiency, and growth.',
       keywords: 'app development, mobile apps, iOS, Android, InfiniMorph Consulting',
     };
   } else if (slug === 'accountant-consulting') {
     metadata = {
-      title: 'Accounting Services | InfiniMorph Consulting',
+      title: 'Professional Accountant Consulting Services | Infinimorph Consulting',
       description:
-        'Streamline your finances with InfiniMorph Consulting’s professional accounting services, including bookkeeping, tax preparation, and financial planning.',
+        'Infinimorph Consulting provides expert Accountant Consulting services to help businesses manage finances, ensure compliance, optimize tax strategies, and achieve sustainable financial growth with professional guidance.',
       keywords: 'accounting, bookkeeping, tax preparation, financial planning, InfiniMorph Consulting',
     };
   } else if (slug === 'graphic-designing') {
     metadata = {
-      title: 'Graphic Design | InfiniMorph Consulting',
+      title: 'Creative Graphic Design Services | Infinimorph Consulting',
       description:
-        'Transform your brand with InfiniMorph Consulting’s creative graphic design services, delivering visually stunning designs for digital and print media.',
+        'Infinimorph Consulting offers creative Graphic Design services that help startups and businesses build strong branding with stunning visuals, unique designs, and professional graphics that engage audiences and drive growth.',
       keywords: 'graphic design, branding, visual design, InfiniMorph Consulting',
     };
   } else if (slug === 'ui-ux-design') {
     metadata = {
-      title: 'UI/UX Design | InfiniMorph Consulting',
+      title: 'UI/UX Design Services for Engaging Experiences | Infinimorph Consulting',
       description:
-        'Enhance user experiences with InfiniMorph Consulting’s UI/UX design services, creating intuitive and engaging interfaces for web and mobile applications.',
+        'Infinimorph Consulting delivers professional UI/UX Design services that create intuitive, user-friendly, and engaging digital experiences to help startups and businesses boost customer satisfaction and growth.',
       keywords: 'UI/UX design, user experience, user interface, InfiniMorph Consulting',
     };
   } else if (slug === 'logo-creation') {
@@ -59,37 +59,37 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
   } else if (slug === 'trademark-branding') {
     metadata = {
-      title: 'Trademark Services | InfiniMorph Consulting',
+      title: 'Trademark & Branding Solutions | Infinimorph Consulting',
       description:
-        'Protect your brand with InfiniMorph Consulting’s trademark services, offering expert guidance on trademark registration and intellectual property.',
+        'Infinimorph Consulting provides expert Trademark & Branding solutions to help businesses protect their brand identity, create memorable logos, and build a strong market presence that drives recognition and growth.',
       keywords: 'trademark services, intellectual property, brand protection, InfiniMorph Consulting',
     };
   } else if (slug === 'digital-marketing') {
     metadata = {
-      title: 'Digital Marketing | InfiniMorph Consulting',
+      title: 'Digital Marketing Services | Infinimorph Consulting',
       description:
-        'Boost your online presence with InfiniMorph Consulting’s digital marketing services, including SEO, social media, and content marketing strategies.',
+        'Infinimorph Consulting offers comprehensive Digital Marketing services to help businesses boost online presence, increase leads, drive traffic, and achieve measurable growth through SEO, social media, and paid campaigns.',
       keywords: 'digital marketing, SEO, social media, content marketing, InfiniMorph Consulting',
     };
   } else if (slug === '3d-modals') {
     metadata = {
-      title: '3D Modeling | InfiniMorph Consulting',
+      title: 'Custom 3D Modeling Services | Infinimorph Consulting',
       description:
-        'Bring your ideas to life with InfiniMorph Consulting’s 3D modeling services, creating high-quality models for animations, games, and visualizations.',
+        'Infinimorph Consulting offers custom 3D Modeling services that bring ideas to life with realistic, high-quality designs for products, architecture, and branding, helping businesses create impactful visual experiences.',
       keywords: '3D modeling, 3D design, animations, visualizations, InfiniMorph Consulting',
     };
   } else if (slug === 'video-editing') {
     metadata = {
-      title: 'Video Editing | InfiniMorph Consulting',
+      title: 'Professional Video Editing Services | Infinimorph Consulting',
       description:
-        'Craft compelling stories with InfiniMorph Consulting’s professional video editing services, delivering polished videos for marketing and entertainment.',
+        'Infinimorph Consulting offers professional Video Editing services that turn raw footage into engaging, high-quality videos designed to boost brand visibility, connect with audiences, and drive business growth.',
       keywords: 'video editing, video production, post-production, InfiniMorph Consulting',
     };
   } else if (slug === 'custom-software-development') {
     metadata = {
-      title: 'Custom Software Development | InfiniMorph Consulting',
+      title: 'Custom Software Development Services | Infinimorph Consulting',
       description:
-        'Build tailored solutions with InfiniMorph Consulting’s custom software development services, designed to meet your unique business requirements.',
+        'Infinimorph Consulting provides custom Software Development services to help businesses build scalable, secure, and efficient applications tailored to their needs, driving digital transformation and growth.',
       keywords: 'custom software, software development, tailored solutions, InfiniMorph Consulting',
     };
   }
