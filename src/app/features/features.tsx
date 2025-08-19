@@ -156,7 +156,7 @@ export default function ServicesPage() {
           {services.map((service, index) => (
             <div
               key={service.id}
-              ref={(el) => (cardsRef.current[index] = el)}
+              ref={(el) => { cardsRef.current[index] = el; }}
               className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg shadow-xl hover:shadow-[0_0_20px_#a855f7] transition-shadow duration-300 p-8"
             >
               <div className="mb-4">
