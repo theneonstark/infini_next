@@ -5,16 +5,25 @@ import { motion } from "framer-motion"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Link from "next/link"
+import Image from "next/image"
 
 gsap.registerPlugin(ScrollTrigger)
+
+interface Service {
+  id: string
+  title: string
+  description: string
+  features: string[]
+  icon: string
+}
 
 export default function ServicesPage() {
   const cardsRef = useRef<(HTMLDivElement | null)[]>([])
 
   useEffect(() => {
-    cardsRef.current.forEach((card, i) => {
+    const animations = cardsRef.current.map((card, i) => {
       if (card) {
-        gsap.fromTo(
+        return gsap.fromTo(
           card,
           { y: 50, opacity: 0 },
           {
@@ -31,93 +40,101 @@ export default function ServicesPage() {
           }
         )
       }
+      return null
     })
+
+    return () => {
+      animations.forEach((animation) => {
+        if (animation) {
+          animation.kill()
+          ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
+        }
+      })
+    }
   }, [])
 
-const services = [
-  {
-    id: "web-design-development",
-    title: "Web Design & Development",
-    description:
-      "Build modern, responsive websites that not only look great but perform seamlessly. From landing pages to complex platforms, we create tailored web experiences.",
-    features: ["Responsive Design", "SEO Optimization", "CMS Integration", "E-Commerce Solutions"],
-    icon: "💻",
-  },
-  {
-    id: "app-development",
-    title: "App Development",
-    description:
-      "Build powerful mobile and web applications using cutting-edge technologies. From concept to deployment, we handle the entire development lifecycle.",
-    features: ["React Native", "Flutter", "Progressive Web Apps", "API Integration"],
-    icon: "📱",
-  },
-  {
-    id: "graphic-designing",
-    title: "Graphic Designing",
-    description:
-      "Craft compelling visual assets that elevate your brand identity across print and digital platforms. We blend creativity with strategy for stunning results.",
-    features: ["Social Media Creatives", "Posters & Flyers", "Infographics", "Ad Creatives"],
-    icon: "🖼️",
-  },
-  {
-    id: "ui-ux-design",
-    title: "UI/UX Design",
-    description:
-      "Create intuitive and beautiful user interfaces that provide exceptional user experiences. Our design process focuses on user research, wireframing, prototyping, and testing.",
-    features: ["User Research", "Wireframing", "Prototyping", "Usability Testing"],
-    icon: "🎨",
-  },
-  {
-    id: "accountant-consulting",
-    title: "Accountant Consulting",
-    description:
-      "We help businesses manage their finances with professional accounting consultations including taxation, bookkeeping, GST, and compliance.",
-    features: ["Tax Filing", "GST Setup", "Bookkeeping", "Compliance Advice"],
-    icon: "📊",
-  },
-  {
-    id: "video-editing",
-    title: "Video Editing",
-    description:
-      "Engage your audience with professionally edited videos that tell your story. We specialize in short-form content, reels, promos, and more.",
-    features: ["Social Media Reels", "YouTube Videos", "Corporate Edits", "Motion Graphics"],
-    icon: "🎬",
-  },
-  {
-    id: "3d-modals",
-    title: "3D Modals",
-    description:
-      "Bring your concepts to life with high-quality 3D modeling and rendering. Perfect for product demos, architecture, and animated visuals.",
-    features: ["Product Modeling", "3D Animation", "Rendering", "Texturing"],
-    icon: "🧊",
-  },
-  {
-    id: "trademark-branding",
-    title: "Trademark & Branding",
-    description:
-      "Protect your brand identity and make it unforgettable. We offer trademark registration along with comprehensive branding services.",
-    features: ["Trademark Filing", "Logo Design", "Brand Strategy", "Visual Identity"],
-    icon: "™️",
-  },
-  {
-    id: "digital-marketing",
-    title: "Digital Marketing",
-    description:
-      "Reach your ideal audience and grow your online presence with data-driven digital marketing strategies tailored to your business goals.",
-    features: ["Social Media Marketing", "Google Ads", "Email Campaigns", "SEO & Analytics"],
-    icon: "📈",
-  },
-  {
-    id: "custom-software-development",
-    title: "Custom Software Development",
-    description:
-      "Get tailor-made software solutions that streamline your business operations and give you a competitive edge.",
-    features: ["ERP Systems", "Inventory Management", "CRM Solutions", "Automation Tools"],
-    icon: "🧩",
-  },
-]
-
-
+  const services: Service[] = [
+    {
+      id: "web-design-development",
+      title: "Web Design & Development",
+      description:
+        "Build modern, responsive websites that not only look great but perform seamlessly. From landing pages to complex platforms, we create tailored web experiences.",
+      features: ["Responsive Design", "SEO Optimization", "CMS Integration", "E-Commerce Solutions"],
+      icon: "/assets/3dicon/web.png",
+    },
+    {
+      id: "app-development",
+      title: "App Development",
+      description:
+        "Build powerful mobile and web applications using cutting-edge technologies. From concept to deployment, we handle the entire development lifecycle.",
+      features: ["React Native", "Flutter", "Progressive Web Apps", "API Integration"],
+      icon: "/assets/3dicon/mobile.png",
+    },
+    {
+      id: "graphic-designing",
+      title: "Graphic Designing",
+      description:
+        "Craft compelling visual assets that elevate your brand identity across print and digital platforms. We blend creativity with strategy for stunning results.",
+      features: ["Social Media Creatives", "Posters & Flyers", "Infographics", "Ad Creatives"],
+      icon: "/assets/3dicon/graphic.png",
+    },
+    {
+      id: "ui-ux-design",
+      title: "UI/UX Design",
+      description:
+        "Create intuitive and beautiful user interfaces that provide exceptional user experiences. Our design process focuses on user research, wireframing, prototyping, and testing.",
+      features: ["User Research", "Wireframing", "Prototyping", "Usability Testing"],
+      icon: "/assets/3dicon/figma.png",
+    },
+    {
+      id: "accountant-consulting",
+      title: "Accountant Consulting",
+      description:
+        "We help businesses manage their finances with professional accounting consultations including taxation, bookkeeping, GST, and compliance.",
+      features: ["Tax Filing", "GST Setup", "Bookkeeping", "Compliance Advice"],
+      icon: "/assets/3dicon/accountant.png",
+    },
+    {
+      id: "video-editing",
+      title: "Video Editing",
+      description:
+        "Engage your audience with professionally edited videos that tell your story. We specialize in short-form content, reels, promos, and more.",
+      features: ["Social Media Reels", "YouTube Videos", "Corporate Edits", "Motion Graphics"],
+      icon: "/assets/3dicon/video.png",
+    },
+    {
+      id: "3d-modals",
+      title: "3D Modals",
+      description:
+        "Bring your concepts to life with high-quality 3D modeling and rendering. Perfect for product demos, architecture, and animated visuals.",
+      features: ["Product Modeling", "3D Animation", "Rendering", "Texturing"],
+      icon: "/assets/3dicon/3dmodal.png",
+    },
+    {
+      id: "trademark-branding",
+      title: "Trademark & Branding",
+      description:
+        "Protect your brand identity and make it unforgettable. We offer trademark registration along with comprehensive branding services.",
+      features: ["Trademark Filing", "Logo Design", "Brand Strategy", "Visual Identity"],
+      icon: "/assets/3dicon/trademark.png",
+    },
+    {
+      id: "digital-marketing",
+      title: "Digital Marketing",
+      description:
+        "Reach your ideal audience and grow your online presence with data-driven digital marketing strategies tailored to your business goals.",
+      features: ["Social Media Marketing", "Google Ads", "Email Campaigns", "SEO & Analytics"],
+      icon: "/assets/3dicon/dm.png",
+    },
+    {
+      id: "custom-software-development",
+      title: "Custom Software Development",
+      description:
+        "Get tailor-made software solutions that streamline your business operations and give you a competitive edge.",
+      features: ["ERP Systems", "Inventory Management", "CRM Solutions", "Automation Tools"],
+      icon: "/assets/3dicon/custom.png",
+    },
+  ]
 
   return (
     <div className="min-h-screen py-20 text-white">
@@ -135,14 +152,16 @@ const services = [
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <div
-              key={index}
-              ref={(el) => {cardsRef.current[index] = el}}
+              key={service.id}
+              ref={(el) => (cardsRef.current[index] = el)}
               className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg shadow-xl hover:shadow-[0_0_20px_#a855f7] transition-shadow duration-300 p-8"
             >
-              <div className="text-4xl mb-4">{service.icon}</div>
+              <div className="mb-4">
+                <Image src={service.icon} width={100} height={100} alt={`${service.title} icon`} />
+              </div>
               <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
               <p className="text-gray-300 mb-6">{service.description}</p>
 
@@ -166,14 +185,15 @@ const services = [
               </div>
 
               <div className="border-t border-white/10 pt-4">
-              <Link href={`/features/${service.id}`}>
-                <motion.button
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors"
-                >
-                  Get Started
-                </motion.button>
+                <Link href={`/features/${service.id}`}>
+                  <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors"
+                    aria-label={`Get started with ${service.title}`}
+                  >
+                    Get Started
+                  </motion.button>
                 </Link>
               </div>
             </div>
@@ -192,13 +212,16 @@ const services = [
             <p className="text-gray-300 mb-8">
               Every business is unique. Let&#39;s discuss your specific requirements and create a tailored solution.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              className="bg-purple-600 text-white py-3 px-8 rounded-lg hover:bg-purple-700 transition-colors"
-            >
-              Contact Us for Custom Quote
-            </motion.button>
+            <Link href="/contact">
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                className="bg-purple-600 text-white py-3 px-8 rounded-lg hover:bg-purple-700 transition-colors"
+                aria-label="Contact us for a custom quote"
+              >
+                Contact Us for Custom Quote
+              </motion.button>
+            </Link>
           </div>
         </motion.div>
       </div>

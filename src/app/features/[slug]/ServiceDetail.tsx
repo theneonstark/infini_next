@@ -117,7 +117,7 @@ export default function ServiceDetailPage() {
     subtitle: "Modern, Responsive Websites That Drive Results",
     description:
       "Transform your online presence with custom-built websites that combine stunning design with powerful functionality. Our expert team creates responsive, SEO-optimized websites that engage visitors and convert them into customers.",
-    icon: "💻",
+    icon: "/assets/3dicon/web.png",
     price: "Starting at $2,500",
     duration: "4-8 weeks",
     deliverables: "Complete Website + 3 Months Support",
@@ -264,7 +264,7 @@ export default function ServiceDetailPage() {
     subtitle: "Native & Cross-Platform Mobile Applications",
     description:
       "Build powerful mobile applications that engage users and drive business growth. From iOS and Android native apps to cross-platform solutions, we create apps that users love.",
-    icon: "📱",
+    icon: "/assets/3dicon/mobile.png",
     price: "Starting at $5,000",
     duration: "8-16 weeks",
     deliverables: "Complete App + App Store Deployment",
@@ -411,7 +411,7 @@ export default function ServiceDetailPage() {
     subtitle: "Visually Stunning Designs for Your Brand",
     description:
       "Elevate your brand with captivating graphic designs that communicate your message effectively. Our creative team delivers high-quality visuals for print, digital, and marketing campaigns.",
-    icon: "🎨",
+    icon: "/assets/3dicon/graphic.png",
     price: "Starting at $500",
     duration: "1-4 weeks",
     deliverables: "Custom Graphics + Source Files",
@@ -544,7 +544,7 @@ export default function ServiceDetailPage() {
     subtitle: "User-Centric Designs for Seamless Experiences",
     description:
       "Create intuitive and engaging user interfaces with our expert UI/UX design services. We focus on user research, wireframing, and prototyping to deliver designs that enhance user satisfaction and engagement.",
-    icon: "🖌️",
+    icon: "/assets/3dicon/figma.png",
     price: "Starting at $1,500",
     duration: "3-6 weeks",
     deliverables: "Wireframes + Prototypes + Design System",
@@ -679,7 +679,7 @@ export default function ServiceDetailPage() {
     subtitle: "Expert Financial Guidance for Your Business",
     description:
       "Our professional accounting services provide strategic financial advice to optimize your business’s financial health. From bookkeeping to tax planning, we ensure compliance and efficiency.",
-    icon: "💸",
+    icon: "/assets/3dicon/accountant.png",
     price: "Starting at $1,000/month",
     duration: "Ongoing or Project-Based",
     deliverables: "Financial Reports + Tax Strategy",
@@ -813,7 +813,7 @@ export default function ServiceDetailPage() {
     subtitle: "Professional Video Content That Captivates",
     description:
       "Create compelling video content with our expert video editing services. From promotional videos to cinematic storytelling, we deliver polished videos that engage your audience.",
-    icon: "🎥",
+    icon: "/assets/3dicon/video.png",
     price: "Starting at $800",
     duration: "1-3 weeks",
     deliverables: "Edited Video + Source Files",
@@ -942,12 +942,12 @@ export default function ServiceDetailPage() {
       },
     ],
   },
-  "3d-models": {
+  "3d-modals": {
     title: "3D Modeling",
     subtitle: "Realistic 3D Assets for Any Industry",
     description:
       "Create high-quality 3D models for games, animations, or product visualizations. Our skilled artists deliver detailed and optimized models tailored to your needs.",
-    icon: "🖼️",
+    icon: "/assets/3dicon/3dmodal.png",
     price: "Starting at $1,200",
     duration: "2-6 weeks",
     deliverables: "3D Models + Textures",
@@ -1031,17 +1031,17 @@ export default function ServiceDetailPage() {
       {
         title: "Game Character",
         description: "Detailed 3D character for a video game",
-        image: "/placeholder.svg?height=200&width=300&text=Game+Character",
+        image: "/assets/projects/gamechr.png",
       },
       {
         title: "Product Visualization",
         description: "Realistic 3D model of a consumer product",
-        image: "/placeholder.svg?height=200&width=300&text=Product+Model",
+        image: "/assets/projects/product.png",
       },
       {
         title: "Architectural Model",
         description: "3D model of a building for visualization",
-        image: "/placeholder.svg?height=200&width=300&text=Architectural+Model",
+        image: "/assets/projects/architechure.png",
       },
     ],
     testimonials: [
@@ -1078,7 +1078,7 @@ export default function ServiceDetailPage() {
     subtitle: "Protect and Build Your Brand Identity",
     description:
       "Establish a strong brand identity and protect it with our trademark and branding services. We create memorable brands and ensure legal protection through trademark registration.",
-    icon: "🏷️",
+    icon: "/assets/3dicon/trademark.png",
     price: "Starting at $2,000",
     duration: "4-8 weeks",
     deliverables: "Brand Identity + Trademark Filing",
@@ -1210,7 +1210,7 @@ export default function ServiceDetailPage() {
     subtitle: "Grow Your Online Presence with Proven Strategies",
     description:
       "Boost your brand’s visibility and engagement with our data-driven digital marketing services. From SEO to social media, we create campaigns that deliver results.",
-    icon: "📈",
+    icon: "/assets/3dicon/dm.png",
     price: "Starting at $1,000/month",
     duration: "Ongoing or Campaign-Based",
     deliverables: "Marketing Strategy + Reports",
@@ -1302,12 +1302,12 @@ export default function ServiceDetailPage() {
       {
         title: "Social Media Ads",
         description: "Boosted engagement for a fashion brand",
-        image: "/placeholder.svg?height=200&width=300&text=Social+Media+Ads",
+        image: "/assets/projects/ads.png",
       },
       {
         title: "PPC Campaign",
         description: "Achieved 5x ROI on Google Ads campaign",
-        image: "/placeholder.svg?height=200&width=300&text=PPC+Campaign",
+        image: "/assets/projects/ppc.png",
       },
     ],
     testimonials: [
@@ -1344,7 +1344,7 @@ export default function ServiceDetailPage() {
     subtitle: "Tailored Software Solutions for Your Business",
     description:
       "Develop bespoke software solutions to streamline your business processes. Our team builds scalable, secure, and efficient software tailored to your specific needs.",
-    icon: "🖥️",
+    icon: "/assets/3dicon/custom.png",
     price: "Starting at $10,000",
     duration: "8-20 weeks",
     deliverables: "Custom Software + Documentation",
@@ -1429,17 +1429,17 @@ export default function ServiceDetailPage() {
       {
         title: "CRM Software",
         description: "Custom CRM for a sales team",
-        image: "/placeholder.svg?height=200&width=300&text=CRM+Software",
+        image: "/assets/projects/crm.png",
       },
       {
         title: "Inventory System",
         description: "Efficient inventory management software",
-        image: "/placeholder.svg?height=200&width=300&text=Inventory+System",
+        image: "/assets/projects/ims.png",
       },
       {
         title: "ERP Solution",
         description: "Enterprise resource planning system",
-        image: "/placeholder.svg?height=200&width=300&text=ERP+Solution",
+        image: "/assets/projects/erp.png",
       },
     ],
     testimonials: [
@@ -1510,7 +1510,7 @@ export default function ServiceDetailPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <span className="text-4xl">{currentService.icon}</span>
+              <Image src={currentService.icon} width={100} height={100} alt={`${currentService.title} icon`}/>
               <div className="flex items-center space-x-2">
                 <div className="flex items-center">
                   {[...Array(5)].map((_, i) => (
@@ -1737,13 +1737,13 @@ export default function ServiceDetailPage() {
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
                       className="w-full h-48 object-cover"
-                      width={200}
-                      height={200}
+                      width={500}
+                      height={500}
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                      <Button variant="secondary" className="opacity-0 hover:opacity-100 transition-opacity">
+                      {/* <Button variant="secondary" className="opacity-0 hover:opacity-100 transition-opacity">
                         View Project
-                      </Button>
+                      </Button> */}
                     </div>
                   </div>
                   <CardContent className="p-6">
@@ -1801,7 +1801,7 @@ export default function ServiceDetailPage() {
         </Tabs>
 
         {/* Contact Form */}
-        <Card className="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg text-white">
+        {/* <Card className="max-w-4xl mx-auto bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg text-white">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl">Ready to Get Started?</CardTitle>
             <CardDescription>
@@ -1921,7 +1921,7 @@ export default function ServiceDetailPage() {
               </div>
             </form>
           </CardContent>
-        </Card>
+        </Card> */}
 
         {/* Quick Contact */}
         <div className="text-center mt-16">
