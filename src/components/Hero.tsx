@@ -108,14 +108,14 @@ export const Hero = () => {
         <div className="flex justify-center mt-8 sm:mt-12 md:mt-16">
           <div className="inline-flex relative">
             <AnimatedGradientText>
-              <h1
+              <div
                 ref={titleRef}
                 className={cn(
                   "text-center text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tighter py-2 sm:py-3 md:py-4 text-center inline-flex animate-gradient bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#6e00ff] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent"
                 )}
               >
                 InifiMorph <br /> Consulting
-              </h1>
+              </div>
             </AnimatedGradientText>
             <motion.div
               className="absolute right-[150px] top-[50px] hidden sm:inline md:right-[300px] md:top-[80px] lg:right-[500px] lg:top-[100px] xl:right-[678px] xl:top-[108px]"
@@ -154,12 +154,20 @@ export const Hero = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <h2
+          <h1
             ref={descriptionRef}
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-center mt-4 sm:mt-6 md:mt-8 max-w-[90%] sm:max-w-[80%] md:max-w-[600px] lg:max-w-[700px]"
           >
-            Whether you&#39;re a startup or scaling enterprise, we help you build, launch, and grow—faster and smarter.
-          </h2>
+            Need a Complete Digital Solution to Grow Your Business Online?
+          </h1>
+        </div>
+        <div className="flex justify-center">
+          <p
+            ref={descriptionRef}
+            className="text-gray-400 sm:text-sm md:text-lg lg:text-xl text-center mt-4 sm:mt-6 md:mt-8 max-w-[90%] sm:max-w-[80%] md:max-w-[600px] lg:max-w-[700px]"
+          >
+            InfiniMorph Consulting helps startups and enterprises with <strong>web development, mobile apps, SEO, and branding services</strong> that actually bring traffic, leads, and revenue.
+          </p>
         </div>
         <div className="flex justify-center mt-6 sm:mt-8 md:mt-10">
           <motion.button
@@ -176,7 +184,7 @@ export const Hero = () => {
               transition: { repeat: Infinity, duration: 2, ease: "easeInOut" },
             }}
           >
-            Get for free
+            Book Your Free Strategy Call
           </motion.button>
         </div>
       </div>

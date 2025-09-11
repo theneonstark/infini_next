@@ -44,7 +44,7 @@ export default function OurService() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          Our <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Services</span>
+          Our <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent"> Expert Services</span>
         </motion.h2>
         <div className="max-w-2xl mx-auto mt-4 sm:mt-6">
           <motion.p
@@ -139,7 +139,7 @@ const services = [
       loop
       autoplay
     />,
-    "description": "Build robust, scalable, and high-performance websites tailored to your business needs using cutting-edge technologies.",
+    "description": "Scalable, high-performance websites built with modern frameworks (React, Node.js, Laravel, Angular).",
     "link" : "/features/web-design-development",
   },
   {
@@ -149,17 +149,17 @@ const services = [
       loop
       autoplay
     />,
-    "description": "Drive growth with strategic digital marketing campaigns, optimizing reach and engagement across all digital channels.",
+    "description": "Targeted campaigns, Google Ads, SMO, analytics to drive engagement and conversions.",
     "link" : "/features/digital-marketing"
   },
   {
-    "title": "Accountant",
+    "title": "Accounting & GST Services",
     "icon": <DotLottieReact
       src="https://lottie.host/1dc27425-a00a-41ef-be14-6bff5169b240/L7cNLC9FDv.lottie"
       loop
       autoplay
     />,
-    "description": "Streamline your financial processes with expert accounting services, ensuring accuracy and compliance for your business.",
+    "description": "Need help with hassle-free accounting or GST filing? We provide expert financial consulting to save your time and ensure compliance.",
     "link" : "/features/accountant-consulting"
   },
   {
@@ -173,13 +173,13 @@ const services = [
     "link" : "/features/custom-software-development"
   },
   {
-    "title": "App Development",
+    "title": "Mobile App Development",
     "icon": <DotLottieReact
       src="https://lottie.host/6edbd8f3-201d-46e9-bfbc-6ca562f21bf5/X9QyFG6i5p.lottie"
       loop
       autoplay
     />,
-    "description": "Keep your website secure, updated, and running smoothly with our comprehensive maintenance and support services.",
+    "description": "Thinking which mobile app is best for your business? We develop scalable Android & Flutter apps that delight users and scale with your growth.",
     "link" : "/features/app-development"
   },
   {

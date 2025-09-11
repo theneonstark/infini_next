@@ -40,7 +40,7 @@ export const Navbar = () => {
               <Link href="/" className="text-opacity-60 text-white hover:text-opacity-100 transition">Home</Link>
               <Link href="/about" className="text-opacity-60 text-white hover:text-opacity-100 transition">About</Link>
               <Link href="/features" className="text-opacity-60 text-white hover:text-opacity-100 transition">Features</Link>
-              <Link href="/updates" className="text-opacity-60 text-white hover:text-opacity-100 transition">Blog</Link>
+              <Link href="/blog" className="text-opacity-60 text-white hover:text-opacity-100 transition">Blog</Link>
               <Link href="/help" className="text-opacity-60 text-white hover:text-opacity-100 transition">Help</Link>
               {/* <Link href="/customers" className="text-opacity-60 text-white hover:text-opacity-100 transition">Customers</Link> */}
               <Link href="/contact">
@@ -52,6 +52,13 @@ export const Navbar = () => {
           {isMobileMenuOpen && (
             <div className="sm:hidden pb-4">
               <nav className="flex flex-col gap-4 text-white text-center">
+                <Link 
+                  href="/" 
+                  className="text-opacity-60 text-white hover:text-opacity-100 transition py-2"
+                  onClick={toggleMobileMenu}
+                >
+                  Home
+                </Link>
                 <Link 
                   href="/about" 
                   className="text-opacity-60 text-white hover:text-opacity-100 transition py-2"

@@ -9,7 +9,7 @@ export const Footer = () => {
           <div>
             <Image src={'/assets/icons/logo.png'} width={200} height={600} alt='logo image'/>
             <p className="text-muted-foreground">
-              Professional services to help your business grow and succeed online.
+              InfiniMorph Consulting is a full-service digital solutions company helping startups and enterprises build high-performing websites, scalable mobile apps, and ROI-driven marketing strategies. From branding and UI/UX design to SEO and accounting, we deliver end-to-end services to accelerate business growth.
             </p>
           </div>
 

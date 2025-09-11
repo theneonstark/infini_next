@@ -176,13 +176,13 @@ export const Weare = () => {
           <div className="space-y-4 sm:space-y-6">
             <p className="text-xs sm:text-sm bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent font-medium">WHO WE ARE</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight">
-              Innovative Solutions for Your <br />
+              Looking for a Partner Who Understands Your<br />
               <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">
-                Online Success.
+                 Business Goals?
               </span>
             </h2>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-xl">
-              Transform your digital presence with our cutting-edge tools and strategies. Our tailored solutions empower businesses to thrive, delivering measurable results through seamless integration and expert support.
+              Whether you’re asking <em>“How do I rank higher on Google?”</em> or <em>“Which app is best for my business?”</em> — we deliver tailored solutions that solve real problems and create measurable results.
             </p>
 
             {/* Stats */}
@@ -213,10 +213,10 @@ export const Weare = () => {
           <div className="space-y-4 sm:space-y-6 pt-6 sm:pt-8 border-t border-gray-800">
             <p className="text-xs sm:text-sm bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent font-medium">OUR MISSION</p>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight">
-              Empowering Your <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Digital Future</span>
+              Empowering Your <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Digital Growth</span>
             </h2>
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-xl">
-              We are dedicated to transforming your vision into reality through innovative digital solutions. By leveraging cutting-edge technology and strategic expertise, we enable businesses to thrive in an ever-evolving online landscape.
+              At InfiniMorph Consulting, we bring your vision to life through innovative technology and strategic expertise to help you thrive in a fast-paced online world.
             </p>
               <Button className="mt-4 sm:mt-6 bg-[#9c40ff] text-white hover:bg-[#6e00ff] w-fit rounded-full text-xs sm:text-sm px-4 sm:px-6">
                 Learn More
@@ -232,7 +232,7 @@ export const Weare = () => {
       >
         <div className="space-y-4 sm:space-y-6 text-left">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-            <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Innovative Design for Modern Businesses</span>.
+            <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Driving Real Results with Expert Digital Solutions.</span>
           </h2>
           <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-md">
             Elevate your brand with our cutting-edge design solutions. We craft visually stunning and user-focused experiences that drive engagement and set your business apart in today’s competitive landscape.
@@ -247,16 +247,16 @@ export const Weare = () => {
             whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
           >
             <h3 className="inline-flex items-center gap-5 text-xl sm:text-3xl font-bold text-white">+60% <span className='text-green-400 text-6xl font-light'>↑</span></h3>
-            <p className="text-green-400 text-xs sm:text-sm mt-2"> Traffic Increase</p>
-            <p className="text-gray-400 text-xs sm:text-sm mt-1">By optimizing your website for search engines and enhancing user experience.</p>
+            <p className="text-green-400 text-xs sm:text-sm mt-2">Boost online traffic by up to 60%</p>
+            <p className="text-gray-400 text-xs sm:text-sm mt-1">through SEO and UX optimization</p>
           </motion.div>
           <motion.div
             className="bg-gray-800/70 backdrop-blur-md p-6 sm:p-8 rounded-lg text-center w-48 sm:w-56"
             whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
           >
             <h3 className="inline-flex items-center gap-5 text-xl sm:text-3xl font-bold text-white">+30% <span className='text-green-400 text-6xl font-light'>↑</span></h3>
-            <p className="text-green-400 text-xs sm:text-sm mt-2"> Revenue Increase</p>
-            <p className="text-gray-400 text-xs sm:text-sm mt-1">Rise in revenue as more visitors convert into paying customers.</p>
+            <p className="text-green-400 text-xs sm:text-sm mt-2"> Increase conversions and revenue by 30%</p>
+            <p className="text-gray-400 text-xs sm:text-sm mt-1">via compelling design & strategy</p>
           </motion.div>
         </div>
       </div>

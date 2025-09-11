@@ -13,8 +13,8 @@ export default function WhyChooseUs() {
         <div className="w-full lg:w-1/2 max-w-xl">
           <p className="text-xs sm:text-sm bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent font-semibold mb-2 tracking-wider">WHY CHOOSE US</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 sm:mb-6">
-            Crafting <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Digital Experiences</span>
-            <br /> That <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Matter.</span>
+            Why <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Choose </span>
+            <br /> InfiniMorph <span className="bg-gradient-to-r from-[#6e00ff] via-[#9c40ff] to-[#9c40ff] bg-clip-text text-transparent">Consulting ?</span>
           </h2>
           <p className="text-gray-400 text-sm sm:text-md md:text-lg mb-6 sm:mb-8">
             We deliver transformative digital solutions that drive success. Our passion for innovation and commitment to excellence ensure your business stands out in a competitive landscape, creating impactful experiences that resonate with your audience.
@@ -22,10 +22,10 @@ export default function WhyChooseUs() {
 
           <div className="space-y-3 sm:space-y-4">
             {[
-              "Expertise and Experience",
-              "Comprehensive Services",
-              "Client-Centric Approach",
-              "Increased Conversion Rates"
+              "One-stop solution for web, apps, SEO, branding, and finance",
+              "Conversational + SEO-focused strategies for higher Google rankings",
+              "Designed for both startups and enterprises",
+              "Proven record: 100+ successful projects delivered"
             ].map((item, i) => (
               <div
                 key={i}
