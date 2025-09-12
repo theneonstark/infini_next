@@ -58,7 +58,9 @@ export default function ScrollSticky({ sections }: { sections: Section[] }) {
         {sections.map((sec, i) => (
           <section
             key={i}
-            ref={(el) => (refs.current[i] = el)}
+            ref={(el: HTMLElement | null) => {
+              refs.current[i] = el; // Assign ref without returning
+            }}
             className={`scroll-section min-h-[70vh] py-10 flex flex-col justify-center ${
               i === sections.length - 1 ? "pb-32" : ""
             }`}
