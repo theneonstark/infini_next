@@ -122,7 +122,7 @@ const AboutPage: FC = () => {
                 </CardHeader>
                 <CardContent className="text-white/90 leading-relaxed space-y-4">
                   <div className="flex flex-col items-center sm:flex-row sm:items-start gap-6">
-                    {/* <motion.div
+                    <motion.div
                       variants={fadeInUp}
                       initial="hidden"
                       whileInView="visible"
@@ -136,7 +136,7 @@ const AboutPage: FC = () => {
                         className="object-cover"
                         sizes="(max-width: 640px) 128px, 160px"
                       />
-                    </motion.div> */}
+                    </motion.div>
                     <div className="text-center sm:text-left">
                       <p className="text-2xl font-semibold">Sabra Khatoon</p>
                       <p>
